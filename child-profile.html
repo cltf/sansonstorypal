@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryPal - 我的</title>
+    <link rel="stylesheet" href="static-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="child-theme">
+    <div class="app-container">
+        <!-- 顶部栏 -->
+        <header class="app-header">
+            <div class="logo">
+                <i class="fas fa-dragon"></i>
+                <span>StoryPal</span>
+            </div>
+            <div class="rewards-icon" onclick="goToRewards()">
+                <i class="fas fa-star"></i>
+                <span class="star-count">32★</span>
+            </div>
+        </header>
+
+        <!-- 主要内容 -->
+        <main class="main-content">
+            <!-- 个人信息卡片 -->
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="avatar-section">
+                        <div class="avatar">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="level-badge">
+                            <span>Lv.5</span>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h2>小明</h2>
+                        <p class="user-title">故事小达人</p>
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">156</span>
+                                <span class="stat-label">星星</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">已读书</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">完成任务</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 成就展示 -->
+            <div class="achievements-section">
+                <h3>我的成就</h3>
+                <div class="achievements-grid">
+                    <div class="achievement-item unlocked">
+                        <div class="achievement-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="achievement-info">
+                            <h4>初读者</h4>
+                            <p>读完第一本书</p>
+                        </div>
+                        <div class="achievement-date">2024-01-15</div>
+                    </div>
+                    <div class="achievement-item unlocked">
+                        <div class="achievement-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="achievement-info">
+                            <h4>星星收集者</h4>
+                            <p>获得100颗星星</p>
+                        </div>
+                        <div class="achievement-date">2024-01-20</div>
+                    </div>
+                    <div class="achievement-item locked">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="achievement-info">
+                            <h4>阅读达人</h4>
+                            <p>读完50本书</p>
+                        </div>
+                        <div class="achievement-progress">12/50</div>
+                    </div>
+                    <div class="achievement-item locked">
+                        <div class="achievement-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="achievement-info">
+                            <h4>连续阅读</h4>
+                            <p>连续阅读7天</p>
+                        </div>
+                        <div class="achievement-progress">3/7</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 功能菜单 -->
+            <div class="profile-menu">
+                <div class="menu-section">
+                    <h3>学习记录</h3>
+                    <div class="menu-items">
+                        <div class="menu-item" onclick="showReadingHistory()">
+                            <div class="menu-icon">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <div class="menu-text">
+                                <h4>阅读历史</h4>
+                                <p>查看所有读过的书</p>
+                            </div>
+                            <div class="menu-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="menu-item" onclick="showLearningStats()">
+                            <div class="menu-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="menu-text">
+                                <h4>学习统计</h4>
+                                <p>详细的阅读数据</p>
+                            </div>
+                            <div class="menu-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="menu-item" onclick="showFavorites()">
+                            <div class="menu-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="menu-text">
+                                <h4>我的收藏</h4>
+                                <p>喜欢的书籍和故事</p>
+                            </div>
+                            <div class="menu-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-section">
+                    <h3>设置</h3>
+                    <div class="menu-items">
+                        <div class="menu-item" onclick="showSettings()">
+                            <div class="menu-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div class="menu-text">
+                                <h4>应用设置</h4>
+                                <p>音效、通知等设置</p>
+                            </div>
+                            <div class="menu-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="menu-item" onclick="toggleEyeProtection()">
+                            <div class="menu-icon">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <div class="menu-text">
+                                <h4>护眼模式</h4>
+                                <p>保护眼睛健康</p>
+                            </div>
+                            <div class="menu-toggle">
+                                <div class="toggle-switch active"></div>
+                            </div>
+                        </div>
+                        <div class="menu-item" onclick="showParentMode()">
+                            <div class="menu-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="menu-text">
+                                <h4>家长模式</h4>
+                                <p>需要家长密码</p>
+                            </div>
+                            <div class="menu-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-section">
+                    <h3>帮助与支持</h3>
+                    <div class="menu-items">
+                        <div class="menu-item" onclick="showHelp()">
+                            <div class="menu-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="menu-text">
+                                <h4>使用帮助</h4>
+                                <p>如何更好地使用应用</p>
+                            </div>
+                            <div class="menu-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="menu-item" onclick="showAbout()">
+                            <div class="menu-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="menu-text">
+                                <h4>关于我们</h4>
+                                <p>版本信息和团队介绍</p>
+                            </div>
+                            <div class="menu-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="static-script.js"></script>
+    <script src="load-nav.js"></script>
+    <script>
+        // 页面特定功能
+        function showReadingHistory() {
+            showNotification('阅读历史功能开发中...');
+        }
+
+        function showLearningStats() {
+            showNotification('学习统计功能开发中...');
+        }
+
+        function showFavorites() {
+            showNotification('我的收藏功能开发中...');
+        }
+
+        function showSettings() {
+            showNotification('应用设置功能开发中...');
+        }
+
+        function toggleEyeProtection() {
+            const toggle = document.querySelector('.toggle-switch');
+            toggle.classList.toggle('active');
+            showNotification('护眼模式已切换');
+        }
+
+        function showParentMode() {
+            showNotification('请输入家长密码');
+        }
+
+        function showHelp() {
+            showNotification('使用帮助功能开发中...');
+        }
+
+        function showAbout() {
+            showNotification('关于我们功能开发中...');
+        }
+    </script>
+</body>
+</html>
+

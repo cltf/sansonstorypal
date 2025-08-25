@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryPal - 阅读书库</title>
+    <link rel="stylesheet" href="static-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="child-theme">
+    <div class="app-container">
+        <!-- 顶部栏 -->
+        <header class="app-header">
+            <h1>阅读书库</h1>
+            <button class="search-btn" onclick="showSearch()">
+                <i class="fas fa-search"></i>
+            </button>
+        </header>
+
+        <!-- 筛选栏 -->
+        <div class="filter-section">
+            <div class="filter-tabs">
+                <div class="filter-tab active" data-filter="age-3-6">3-6岁</div>
+                <div class="filter-tab" data-filter="age-7-9">7-9岁</div>
+                <div class="filter-tab" data-filter="age-10-12">10-12岁</div>
+            </div>
+            <div class="filter-tabs">
+                <div class="filter-tab active" data-filter="level-pre-a1">Pre-A1</div>
+                <div class="filter-tab" data-filter="level-a1">A1</div>
+                <div class="filter-tab" data-filter="level-a2">A2</div>
+            </div>
+        </div>
+
+        <!-- 搜索栏 -->
+        <div class="search-section hidden" id="searchSection">
+            <div class="search-input-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="搜索绘本..." class="search-input">
+                <button class="clear-btn" onclick="clearSearch()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- 绘本列表 -->
+        <main class="book-list">
+            <div class="book-grid">
+                <div class="book-card" onclick="openBook('caterpillar')">
+                    <div class="book-cover">
+                        <i class="fas fa-book-open"></i>
+                        <div class="book-badge ar-badge">AR</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>The Very Hungry Caterpillar</h3>
+                        <p class="author">Eric Carle</p>
+                        <div class="book-tags">
+                            <span class="tag difficulty">Pre-A1</span>
+                            <span class="tag age">3-6岁</span>
+                        </div>
+                        <div class="book-features">
+                            <i class="fas fa-download offline-icon" title="离线可用"></i>
+                            <i class="fas fa-trophy task-icon" title="含任务"></i>
+                        </div>
+                    </div>
+                    <button class="read-btn">
+                        <i class="fas fa-play"></i>
+                        开始阅读
+                    </button>
+                </div>
+
+                <div class="book-card" onclick="openBook('brown-bear')">
+                    <div class="book-cover">
+                        <i class="fas fa-book-open"></i>
+                        <div class="book-badge ar-badge">AR</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Brown Bear, Brown Bear</h3>
+                        <p class="author">Bill Martin Jr.</p>
+                        <div class="book-tags">
+                            <span class="tag difficulty">Pre-A1</span>
+                            <span class="tag age">3-6岁</span>
+                        </div>
+                        <div class="book-features">
+                            <i class="fas fa-trophy task-icon" title="含任务"></i>
+                        </div>
+                    </div>
+                    <button class="read-btn">
+                        <i class="fas fa-play"></i>
+                        开始阅读
+                    </button>
+                </div>
+
+                <div class="book-card" onclick="openBook('green-eggs')">
+                    <div class="book-cover">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="book-info">
+                        <h3>Green Eggs and Ham</h3>
+                        <p class="author">Dr. Seuss</p>
+                        <div class="book-tags">
+                            <span class="tag difficulty">A1</span>
+                            <span class="tag age">7-9岁</span>
+                        </div>
+                        <div class="book-features">
+                            <i class="fas fa-download offline-icon" title="离线可用"></i>
+                        </div>
+                    </div>
+                    <button class="read-btn">
+                        <i class="fas fa-play"></i>
+                        开始阅读
+                    </button>
+                </div>
+
+                <div class="book-card" onclick="openBook('goodnight-moon')">
+                    <div class="book-cover">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="book-info">
+                        <h3>Goodnight Moon</h3>
+                        <p class="author">Margaret Wise Brown</p>
+                        <div class="book-tags">
+                            <span class="tag difficulty">Pre-A1</span>
+                            <span class="tag age">3-6岁</span>
+                        </div>
+                        <div class="book-features">
+                            <i class="fas fa-download offline-icon" title="离线可用"></i>
+                            <i class="fas fa-trophy task-icon" title="含任务"></i>
+                        </div>
+                    </div>
+                    <button class="read-btn">
+                        <i class="fas fa-play"></i>
+                        开始阅读
+                    </button>
+                </div>
+
+                <div class="book-card" onclick="openBook('where-wild-things')">
+                    <div class="book-cover">
+                        <i class="fas fa-book-open"></i>
+                        <div class="book-badge ar-badge">AR</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Where the Wild Things Are</h3>
+                        <p class="author">Maurice Sendak</p>
+                        <div class="book-tags">
+                            <span class="tag difficulty">A1</span>
+                            <span class="tag age">4-7岁</span>
+                        </div>
+                        <div class="book-features">
+                            <i class="fas fa-trophy task-icon" title="含任务"></i>
+                        </div>
+                    </div>
+                    <button class="read-btn">
+                        <i class="fas fa-play"></i>
+                        开始阅读
+                    </button>
+                </div>
+
+                <div class="book-card" onclick="openBook('chicka-chicka')">
+                    <div class="book-cover">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="book-info">
+                        <h3>Chicka Chicka Boom Boom</h3>
+                        <p class="author">Bill Martin Jr.</p>
+                        <div class="book-tags">
+                            <span class="tag difficulty">Pre-A1</span>
+                            <span class="tag age">3-6岁</span>
+                        </div>
+                        <div class="book-features">
+                            <i class="fas fa-download offline-icon" title="离线可用"></i>
+                        </div>
+                    </div>
+                    <button class="read-btn">
+                        <i class="fas fa-play"></i>
+                        开始阅读
+                    </button>
+                </div>
+
+                <div class="book-card" onclick="openBook('corduroy')">
+                    <div class="book-cover">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="book-info">
+                        <h3>Corduroy</h3>
+                        <p class="author">Don Freeman</p>
+                        <div class="book-tags">
+                            <span class="tag difficulty">A1</span>
+                            <span class="tag age">4-8岁</span>
+                        </div>
+                        <div class="book-features">
+                            <i class="fas fa-download offline-icon" title="离线可用"></i>
+                            <i class="fas fa-trophy task-icon" title="含任务"></i>
+                        </div>
+                    </div>
+                    <button class="read-btn">
+                        <i class="fas fa-play"></i>
+                        开始阅读
+                    </button>
+                </div>
+
+                <div class="book-card" onclick="openBook('curious-george')">
+                    <div class="book-cover">
+                        <i class="fas fa-book-open"></i>
+                        <div class="book-badge ar-badge">AR</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Curious George</h3>
+                        <p class="author">H.A. Rey</p>
+                        <div class="book-tags">
+                            <span class="tag difficulty">A1</span>
+                            <span class="tag age">5-8岁</span>
+                        </div>
+                        <div class="book-features">
+                            <i class="fas fa-trophy task-icon" title="含任务"></i>
+                        </div>
+                    </div>
+                    <button class="read-btn">
+                        <i class="fas fa-play"></i>
+                        开始阅读
+                    </button>
+                </div>
+
+                <div class="book-card" onclick="openBook('little-prince')">
+                    <div class="book-cover">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="book-info">
+                        <h3>The Little Prince</h3>
+                        <p class="author">Antoine de Saint-Exupéry</p>
+                        <div class="book-tags">
+                            <span class="tag difficulty">A2</span>
+                            <span class="tag age">8-12岁</span>
+                        </div>
+                        <div class="book-features">
+                            <i class="fas fa-download offline-icon" title="离线可用"></i>
+                        </div>
+                    </div>
+                    <button class="read-btn">
+                        <i class="fas fa-play"></i>
+                        开始阅读
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- 推荐栏 -->
+        <div class="recommendation-bar">
+            <i class="fas fa-star"></i>
+            <span>根据你的阅读表现，推荐你读《Green Eggs and Ham》</span>
+        </div>
+
+    </div>
+
+    <!-- 搜索弹窗 -->
+    <div class="modal hidden" id="searchModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>搜索绘本</h3>
+                <button class="close-btn" onclick="closeSearch()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="输入绘本名称或作者..." class="search-input">
+                </div>
+                <div class="search-suggestions">
+                    <div class="suggestion-item">
+                        <i class="fas fa-book"></i>
+                        <span>The Very Hungry Caterpillar</span>
+                    </div>
+                    <div class="suggestion-item">
+                        <i class="fas fa-book"></i>
+                        <span>Brown Bear, Brown Bear</span>
+                    </div>
+                    <div class="suggestion-item">
+                        <i class="fas fa-book"></i>
+                        <span>Green Eggs and Ham</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static-script.js"></script>
+    <script src="load-nav.js"></script>
+</body>
+</html>

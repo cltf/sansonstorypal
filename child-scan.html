@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryPal - 绘本扫描</title>
+    <link rel="stylesheet" href="static-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="child-theme">
+    <div class="app-container">
+        <!-- 顶部栏 -->
+        <header class="app-header">
+            <button class="back-btn" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1>扫描绘本</h1>
+            <button class="help-btn" onclick="showHelp()">
+                <i class="fas fa-question-circle"></i>
+            </button>
+        </header>
+
+        <!-- 扫描界面 -->
+        <main class="scan-container">
+            <div class="scan-frame" id="scanFrame">
+                <div class="scan-border"></div>
+                <div class="scan-text">请对准绘本页面</div>
+                <div class="scan-tip">将绘本放在框内，保持稳定</div>
+            </div>
+
+            <!-- 扫描状态 -->
+            <div class="scan-status">
+                <div class="status-indicator">
+                    <i class="fas fa-camera"></i>
+                    <span>准备扫描</span>
+                </div>
+            </div>
+
+            <!-- 控制按钮 -->
+            <div class="scan-controls">
+                <button class="control-btn offline-btn" onclick="showOfflineBooks()">
+                    <i class="fas fa-list"></i>
+                    离线绘本
+                </button>
+                <button class="control-btn flash-btn" onclick="toggleFlash()">
+                    <i class="fas fa-bolt"></i>
+                    闪光灯
+                </button>
+            </div>
+
+            <!-- 扫描结果 -->
+            <div class="scan-result hidden" id="scanResult">
+                <div class="result-card">
+                    <div class="book-cover">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="book-info">
+                        <h3>The Very Hungry Caterpillar</h3>
+                        <p>Eric Carle</p>
+                        <div class="book-tags">
+                            <span class="tag difficulty">Pre-A1</span>
+                            <span class="tag age">3-6岁</span>
+                            <span class="tag ar">AR互动</span>
+                        </div>
+                    </div>
+                    <button class="start-reading-btn" onclick="startARReading()">
+                        <i class="fas fa-play"></i>
+                        开始阅读
+                    </button>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- 帮助弹窗 -->
+    <div class="modal hidden" id="helpModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>如何使用扫描功能</h3>
+                <button class="close-btn" onclick="closeHelp()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="help-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>准备绘本</h4>
+                        <p>确保绘本页面平整，光线充足</p>
+                    </div>
+                </div>
+                <div class="help-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>对准扫描框</h4>
+                        <p>将绘本页面完全放入扫描框内</p>
+                    </div>
+                </div>
+                <div class="help-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>保持稳定</h4>
+                        <p>保持手机稳定，等待扫描完成</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static-script.js"></script>
+    <script src="load-nav.js"></script>
+</body>
+</html>

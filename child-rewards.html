@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryPal - 奖励中心</title>
+    <link rel="stylesheet" href="static-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="child-theme">
+    <div class="app-container">
+        <!-- 顶部栏 -->
+        <header class="app-header">
+            <h1>奖励中心</h1>
+            <button class="history-btn" onclick="showHistory()">
+                <i class="fas fa-history"></i>
+            </button>
+        </header>
+
+        <!-- 星星统计 -->
+        <div class="stars-summary">
+            <div class="total-stars">
+                <i class="fas fa-star"></i>
+                <span class="star-count">32★</span>
+            </div>
+            <div class="progress-section">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 68%"></div>
+                </div>
+                <p class="progress-text">距离解锁新宠物还差18★</p>
+            </div>
+        </div>
+
+        <!-- 奖励分类标签 -->
+        <div class="rewards-tabs">
+            <div class="tab active" data-tab="skins" onclick="switchTab('skins')">
+                <i class="fas fa-palette"></i>
+                <span>角色皮肤</span>
+            </div>
+            <div class="tab" data-tab="stickers" onclick="switchTab('stickers')">
+                <i class="fas fa-sticky-note"></i>
+                <span>贴纸</span>
+            </div>
+            <div class="tab" data-tab="pets" onclick="switchTab('pets')">
+                <i class="fas fa-paw"></i>
+                <span>虚拟宠物</span>
+            </div>
+        </div>
+
+        <!-- 奖励内容 -->
+        <main class="rewards-content">
+            <!-- 角色皮肤 -->
+            <div class="tab-content active" id="skins-content">
+                <div class="rewards-grid">
+                    <div class="reward-item locked" onclick="unlockReward('rainbow-caterpillar', 20)">
+                        <div class="reward-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div class="reward-info">
+                            <h3>毛毛虫彩虹皮肤</h3>
+                            <p>让毛毛虫穿上彩虹色的外衣</p>
+                            <div class="unlock-cost">需20★解锁</div>
+                        </div>
+                        <div class="lock-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+
+                    <div class="reward-item unlocked" onclick="useReward('red-hood')">
+                        <div class="reward-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="reward-info">
+                            <h3>小红帽斗篷皮肤</h3>
+                            <p>经典小红帽造型</p>
+                            <button class="use-btn">使用</button>
+                        </div>
+                    </div>
+
+                    <div class="reward-item locked" onclick="unlockReward('space-cat', 30)">
+                        <div class="reward-icon">
+                            <i class="fas fa-cat"></i>
+                        </div>
+                        <div class="reward-info">
+                            <h3>太空猫咪皮肤</h3>
+                            <p>穿上宇航服的可爱猫咪</p>
+                            <div class="unlock-cost">需30★解锁</div>
+                        </div>
+                        <div class="lock-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 贴纸 -->
+            <div class="tab-content" id="stickers-content">
+                <div class="rewards-grid">
+                    <div class="reward-item unlocked" onclick="useSticker('apple')">
+                        <div class="reward-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <div class="reward-info">
+                            <h3>苹果贴纸</h3>
+                            <p>红红的苹果贴纸</p>
+                            <button class="use-btn">使用</button>
+                        </div>
+                    </div>
+
+                    <div class="reward-item unlocked" onclick="useSticker('elephant')">
+                        <div class="reward-icon">
+                            <i class="fas fa-elephant"></i>
+                        </div>
+                        <div class="reward-info">
+                            <h3>大象贴纸</h3>
+                            <p>可爱的大象贴纸</p>
+                            <button class="use-btn">使用</button>
+                        </div>
+                    </div>
+
+                    <div class="reward-item locked" onclick="unlockReward('butterfly', 15)">
+                        <div class="reward-icon">
+                            <i class="fas fa-butterfly"></i>
+                        </div>
+                        <div class="reward-info">
+                            <h3>蝴蝶贴纸</h3>
+                            <p>美丽的蝴蝶贴纸</p>
+                            <div class="unlock-cost">需15★解锁</div>
+                        </div>
+                        <div class="lock-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 虚拟宠物 -->
+            <div class="tab-content" id="pets-content">
+                <div class="rewards-grid">
+                    <div class="reward-item unlocked" onclick="feedPet('dragon')">
+                        <div class="reward-icon">
+                            <i class="fas fa-dragon"></i>
+                        </div>
+                        <div class="reward-info">
+                            <h3>小恐龙</h3>
+                            <p>已拥有 - 点击喂养</p>
+                            <div class="pet-status">
+                                <span class="hunger">饥饿度：75%</span>
+                                <button class="feed-btn">喂食</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reward-item locked" onclick="unlockReward('rabbit', 50)">
+                        <div class="reward-icon">
+                            <i class="fas fa-rabbit"></i>
+                        </div>
+                        <div class="reward-info">
+                            <h3>小兔子</h3>
+                            <p>可爱的小白兔</p>
+                            <div class="unlock-cost">需50★解锁</div>
+                        </div>
+                        <div class="lock-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+
+                    <div class="reward-item locked" onclick="unlockReward('penguin', 40)">
+                        <div class="reward-icon">
+                            <i class="fas fa-penguin"></i>
+                        </div>
+                        <div class="reward-info">
+                            <h3>小企鹅</h3>
+                            <p>南极的小企鹅</p>
+                            <div class="unlock-cost">需40★解锁</div>
+                        </div>
+                        <div class="lock-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- 解锁确认弹窗 -->
+    <div class="modal hidden" id="unlockModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>解锁确认</h3>
+                <button class="close-btn" onclick="closeUnlockModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="unlock-preview">
+                    <div class="reward-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h4 id="unlockItemName">毛毛虫彩虹皮肤</h4>
+                    <p>是否用 <span id="unlockCost">20★</span> 解锁这个奖励？</p>
+                </div>
+                <div class="modal-actions">
+                    <button class="cancel-btn" onclick="closeUnlockModal()">取消</button>
+                    <button class="confirm-btn" onclick="confirmUnlock()">确认解锁</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 喂养弹窗 -->
+    <div class="modal hidden" id="feedModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>喂养宠物</h3>
+                <button class="close-btn" onclick="closeFeedModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="pet-info">
+                    <div class="pet-avatar">
+                        <i class="fas fa-dragon"></i>
+                    </div>
+                    <h4>小恐龙</h4>
+                    <p>饥饿度：75%</p>
+                </div>
+                <div class="food-options">
+                    <div class="food-item" onclick="feedWithFood('carrot', 5)">
+                        <i class="fas fa-carrot"></i>
+                        <span>胡萝卜 (5★)</span>
+                    </div>
+                    <div class="food-item" onclick="feedWithFood('apple', 3)">
+                        <i class="fas fa-apple-alt"></i>
+                        <span>苹果 (3★)</span>
+                    </div>
+                    <div class="food-item" onclick="feedWithFood('cake', 8)">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>蛋糕 (8★)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static-script.js"></script>
+    <script src="load-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryPal 产品原型图</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-dragon"></i> StoryPal 产品原型图</h1>
+            <nav class="nav">
+                <button class="nav-btn active" data-page="child-home">儿童端首页</button>
+                <button class="nav-btn" data-page="child-scan">绘本扫描</button>
+                <button class="nav-btn" data-page="child-reading">阅读列表</button>
+                <button class="nav-btn" data-page="child-rewards">奖励中心</button>
+                <button class="nav-btn" data-page="parent-dashboard">家长看板</button>
+                <button class="nav-btn" data-page="parent-remote">远程共读</button>
+                <button class="nav-btn" data-page="parent-settings">防沉迷设置</button>
+                <button class="nav-btn" data-page="hardware-connect">设备连接</button>
+                <button class="nav-btn" data-page="hardware-projector">投影模式</button>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!-- 儿童端首页 -->
+            <div class="page active" id="child-home">
+                <div class="phone-frame">
+                    <div class="phone-header">
+                        <div class="logo">
+                            <i class="fas fa-dragon"></i>
+                            <span>StoryPal</span>
+                        </div>
+                        <div class="rewards-icon">
+                            <i class="fas fa-star"></i>
+                            <span class="star-count">32★</span>
+                        </div>
+                    </div>
+                    
+                    <div class="main-functions">
+                        <div class="function-card scan-card">
+                            <div class="function-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div class="function-text">扫绘本，让角色活起来</div>
+                        </div>
+                        
+                        <div class="function-card reading-card">
+                            <div class="function-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="function-text">为你推荐的书</div>
+                            <div class="difficulty-tag">Pre-A1</div>
+                        </div>
+                        
+                        <div class="function-card task-card">
+                            <div class="function-icon">
+                                <i class="fas fa-trophy"></i>
+                                <div class="notification-dot"></div>
+                            </div>
+                            <div class="function-text">今日闯关任务</div>
+                        </div>
+                        
+                        <div class="function-card offline-card">
+                            <div class="function-icon">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <div class="function-text">没网也能读</div>
+                            <div class="cache-count">8本</div>
+                        </div>
+                    </div>
+                    
+                    <div class="bottom-bar">
+                        <button class="parent-entry">
+                            <i class="fas fa-users"></i>
+                            找爸爸妈妈
+                        </button>
+                        <div class="eye-protection">
+                            <i class="fas fa-moon"></i>
+                            <span>护眼模式</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 绘本扫描页 -->
+            <div class="page" id="child-scan">
+                <div class="phone-frame">
+                    <div class="scan-interface">
+                        <div class="scan-frame">
+                            <div class="scan-border"></div>
+                            <div class="scan-text">请对准绘本页面</div>
+                        </div>
+                        <button class="offline-books">
+                            <i class="fas fa-list"></i>
+                            切换离线绘本
+                        </button>
+                        <button class="help-btn">
+                            <i class="fas fa-question-circle"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="ar-interface hidden">
+                        <div class="book-page">
+                            <div class="ar-character">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <div class="book-text">Hello! I'm a hungry caterpillar!</div>
+                        </div>
+                        <div class="interaction-bar">
+                            <button class="read-btn">
+                                <i class="fas fa-microphone"></i>
+                                跟读
+                            </button>
+                            <button class="lookup-btn">
+                                <i class="fas fa-search"></i>
+                                查词
+                            </button>
+                        </div>
+                        <div class="task-bubble">
+                            <i class="fas fa-lightbulb"></i>
+                            找到3种毛毛虫爱吃的食物，说出它们的英文！
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 阅读列表页 -->
+            <div class="page" id="child-reading">
+                <div class="phone-frame">
+                    <div class="filter-bar">
+                        <div class="filter-item active">3-6岁</div>
+                        <div class="filter-item">7-9岁</div>
+                        <div class="filter-item">10-12岁</div>
+                        <div class="filter-item">Pre-A1</div>
+                        <div class="filter-item">A1</div>
+                        <div class="filter-item">A2</div>
+                    </div>
+                    
+                    <div class="book-grid">
+                        <div class="book-card">
+                            <div class="book-cover">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="book-title">The Very Hungry Caterpillar</div>
+                            <div class="book-difficulty">Pre-A1・3-6岁</div>
+                            <button class="start-reading">开始阅读</button>
+                            <div class="book-tags">
+                                <i class="fas fa-download offline-tag"></i>
+                                <i class="fas fa-trophy task-tag"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="book-card">
+                            <div class="book-cover">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="book-title">Brown Bear, Brown Bear</div>
+                            <div class="book-difficulty">Pre-A1・3-6岁</div>
+                            <button class="start-reading">开始阅读</button>
+                            <div class="book-tags">
+                                <i class="fas fa-trophy task-tag"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recommendation">
+                        <i class="fas fa-star"></i>
+                        根据你的阅读表现，推荐你读《Green Eggs and Ham》
+                    </div>
+                </div>
+            </div>
+
+            <!-- 奖励中心页 -->
+            <div class="page" id="child-rewards">
+                <div class="phone-frame">
+                    <div class="rewards-header">
+                        <div class="total-stars">
+                            <span class="star-number">32★</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 68%"></div>
+                            <span class="progress-text">距离解锁新宠物还差18★</span>
+                        </div>
+                    </div>
+                    
+                    <div class="rewards-tabs">
+                        <div class="tab active">角色皮肤</div>
+                        <div class="tab">贴纸</div>
+                        <div class="tab">虚拟宠物</div>
+                    </div>
+                    
+                    <div class="rewards-content">
+                        <div class="skin-item locked">
+                            <div class="skin-icon">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <div class="skin-name">毛毛虫彩虹皮肤</div>
+                            <div class="unlock-cost">需20★解锁</div>
+                        </div>
+                        
+                        <div class="skin-item unlocked">
+                            <div class="skin-icon">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <div class="skin-name">小红帽斗篷皮肤</div>
+                            <button class="use-btn">使用</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 家长看板页 -->
+            <div class="page" id="parent-dashboard">
+                <div class="phone-frame">
+                    <div class="child-info">
+                        <h3>小明（6岁）</h3>
+                        <div class="level-info">CEFR Pre-A1（进步中）</div>
+                    </div>
+                    
+                    <div class="data-cards">
+                        <div class="data-card">
+                            <h4>阅读时长</h4>
+                            <div class="chart-placeholder">📈 折线图</div>
+                            <div class="data-summary">本周总时长：210分钟，较上周+30分钟</div>
+                        </div>
+                        
+                        <div class="data-card">
+                            <h4>词汇掌握</h4>
+                            <div class="chart-placeholder">📊 柱状图</div>
+                            <div class="data-summary">累计掌握词汇：85个</div>
+                        </div>
+                        
+                        <div class="data-card">
+                            <h4>发音准确率</h4>
+                            <div class="chart-placeholder">⭕ 环形图</div>
+                            <div class="data-summary">平均准确率88%，需提升：'elephant''butterfly'等长单词</div>
+                        </div>
+                    </div>
+                    
+                    <div class="reading-history">
+                        <h4>近期阅读记录</h4>
+                        <div class="history-item">
+                            <div class="book-name">The Very Hungry Caterpillar</div>
+                            <div class="reading-time">2024-05-20 19:30</div>
+                            <div class="reading-duration">15分钟</div>
+                            <div class="performance">发音准确率92%，掌握5个新单词</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 远程共读页 -->
+            <div class="page" id="parent-remote">
+                <div class="phone-frame">
+                    <div class="book-search">
+                        <input type="text" placeholder="搜索要录制的绘本" class="search-input">
+                    </div>
+                    
+                    <div class="recommended-books">
+                        <h4>孩子最近在读的绘本</h4>
+                        <div class="book-item">
+                            <i class="fas fa-book"></i>
+                            <span>Brown Bear, Brown Bear, What Do You See?</span>
+                        </div>
+                    </div>
+                    
+                    <div class="recording-area">
+                        <div class="book-preview">
+                            <div class="page-preview">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <div class="text-content">
+                                Brown bear, brown bear, what do you see?
+                            </div>
+                        </div>
+                        
+                        <div class="recording-controls">
+                            <button class="record-btn">
+                                <i class="fas fa-microphone"></i>
+                                录制
+                            </button>
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                                播放
+                            </button>
+                            <button class="save-btn">
+                                <i class="fas fa-save"></i>
+                                保存
+                            </button>
+                        </div>
+                        
+                        <div class="recording-settings">
+                            <div class="setting-item">
+                                <label>语速调节：</label>
+                                <select>
+                                    <option>慢</option>
+                                    <option selected>中</option>
+                                    <option>快</option>
+                                </select>
+                            </div>
+                            <div class="setting-item">
+                                <label>背景音：</label>
+                                <select>
+                                    <option selected>无</option>
+                                    <option>轻音乐</option>
+                                    <option>自然音效</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 防沉迷设置页 -->
+            <div class="page" id="parent-settings">
+                <div class="phone-frame">
+                    <div class="settings-section">
+                        <h4>时长设置</h4>
+                        <div class="setting-item">
+                            <label>每日使用时长：</label>
+                            <input type="range" min="0" max="60" value="30" class="time-slider">
+                            <span class="time-display">30分钟/天</span>
+                        </div>
+                        <div class="setting-item">
+                            <label>
+                                <input type="checkbox" checked>
+                                分段使用（每20分钟提醒休息）
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-section">
+                        <h4>视力保护</h4>
+                        <div class="setting-item">
+                            <label>
+                                <input type="checkbox">
+                                护眼投影模式（20分钟自动切换为投影模式）
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <label>休息提醒文案：</label>
+                            <input type="text" value="Let's take a 5-minute eye break!" class="reminder-text">
+                        </div>
+                    </div>
+                    
+                    <div class="settings-section">
+                        <h4>使用时段限制</h4>
+                        <div class="setting-item">
+                            <label>禁止使用时段：</label>
+                            <select>
+                                <option>22:00-07:00</option>
+                                <option>21:00-08:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button class="save-settings">保存设置</button>
+                </div>
+            </div>
+
+            <!-- 设备连接页 -->
+            <div class="page" id="hardware-connect">
+                <div class="phone-frame">
+                    <div class="connect-header">
+                        <h3>连接 StoryPal 阅读灯</h3>
+                    </div>
+                    
+                    <div class="connect-steps">
+                        <div class="step">
+                            <i class="fas fa-power-off"></i>
+                            <span>打开阅读灯电源（长按电源键3秒）</span>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-bluetooth"></i>
+                            <span>开启手机蓝牙，搜索设备'StoryPal-L123'</span>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-link"></i>
+                            <span>点击下方设备名称完成配对</span>
+                        </div>
+                    </div>
+                    
+                    <div class="device-list">
+                        <div class="device-item">
+                            <i class="fas fa-wifi"></i>
+                            <span>StoryPal-L123（信号满格）</span>
+                        </div>
+                    </div>
+                    
+                    <div class="connect-tip">
+                        连接成功后，可使用投影模式和离线绘本
+                    </div>
+                </div>
+            </div>
+
+            <!-- 投影模式页 -->
+            <div class="page" id="hardware-projector">
+                <div class="phone-frame">
+                    <div class="projector-view">
+                        <div class="projected-content">
+                            <i class="fas fa-image"></i>
+                            <div class="projected-text">绘本内容投影</div>
+                        </div>
+                    </div>
+                    
+                    <div class="projector-controls">
+                        <div class="control-item">
+                            <label>亮度调节：</label>
+                            <input type="range" min="1" max="3" value="2" class="brightness-slider">
+                            <span>中</span>
+                        </div>
+                        <div class="control-item">
+                            <label>投影尺寸：</label>
+                            <div class="size-buttons">
+                                <button class="size-btn">小</button>
+                                <button class="size-btn active">中</button>
+                                <button class="size-btn">大</button>
+                            </div>
+                        </div>
+                        <div class="control-item">
+                            <button class="page-btn">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="page-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="control-item">
+                            <label>
+                                <input type="checkbox">
+                                AR投影互动
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="projector-tip">
+                        建议投影距离：1.5-2米，墙面保持平整浅色
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="interaction-notes">
+            <h3>交互说明</h3>
+            <div id="current-notes">
+                <p><strong>儿童端首页：</strong></p>
+                <ul>
+                    <li>点击「绘本扫描」→ 启动摄像头（首次使用弹出权限申请）</li>
+                    <li>点击「推荐阅读」→ 跳转分龄分级阅读列表页</li>
+                    <li>点击「奖励中心」→ 跳转奖励中心页</li>
+                    <li>点击「护眼模式」→ 界面亮度降低20%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

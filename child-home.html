@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryPal - 儿童首页</title>
+    <link rel="stylesheet" href="static-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="child-theme">
+    <div class="app-container">
+        <!-- 顶部栏 -->
+        <header class="app-header">
+            <div class="logo">
+                <i class="fas fa-dragon"></i>
+                <span>StoryPal</span>
+            </div>
+            <div class="rewards-icon" onclick="goToRewards()">
+                <i class="fas fa-star"></i>
+                <span class="star-count">32★</span>
+            </div>
+        </header>
+
+        <!-- 主要功能区 -->
+        <main class="main-content">
+            <div class="function-grid">
+                <div class="function-card scan-card" onclick="goToScan()">
+                    <div class="function-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="function-text">扫绘本，让角色活起来</div>
+                </div>
+                
+                <div class="function-card reading-card" onclick="goToReading()">
+                    <div class="function-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="function-text">为你推荐的书</div>
+                    <div class="difficulty-tag">Pre-A1</div>
+                </div>
+                
+                <div class="function-card task-card" onclick="goToTasks()">
+                    <div class="function-icon">
+                        <i class="fas fa-trophy"></i>
+                        <div class="notification-dot"></div>
+                    </div>
+                    <div class="function-text">今日闯关任务</div>
+                </div>
+                
+                <div class="function-card offline-card" onclick="goToOffline()">
+                    <div class="function-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="function-text">没网也能读</div>
+                    <div class="cache-count">8本</div>
+                </div>
+            </div>
+
+            <!-- 今日推荐 -->
+            <div class="today-recommendation">
+                <h3>今日推荐</h3>
+                <div class="recommendation-card">
+                    <div class="book-preview">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="book-info">
+                        <h4>The Very Hungry Caterpillar</h4>
+                        <p>跟着毛毛虫一起学习食物和数字吧！</p>
+                        <div class="book-stats">
+                            <span class="difficulty">难度：Pre-A1</span>
+                            <span class="duration">时长：15分钟</span>
+                        </div>
+                    </div>
+                    <button class="start-btn" onclick="startReading('caterpillar')">
+                        <i class="fas fa-play"></i>
+                        开始阅读
+                    </button>
+                </div>
+            </div>
+
+            <!-- 最近阅读 -->
+            <div class="recent-reading">
+                <h3>最近阅读</h3>
+                <div class="reading-list">
+                    <div class="reading-item">
+                        <div class="book-cover">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="reading-info">
+                            <h4>Brown Bear, Brown Bear</h4>
+                            <p>阅读进度：75%</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <button class="continue-btn">继续</button>
+                    </div>
+                    <div class="reading-item">
+                        <div class="book-cover">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="reading-info">
+                            <h4>Goodnight Moon</h4>
+                            <p>阅读进度：30%</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <button class="continue-btn">继续</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 学习统计 -->
+            <div class="learning-stats">
+                <h3>学习统计</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>本周阅读时长</h4>
+                            <p class="stat-value">2小时30分钟</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>已读绘本</h4>
+                            <p class="stat-value">12本</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>获得星星</h4>
+                            <p class="stat-value">156颗</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>完成任务</h4>
+                            <p class="stat-value">8个</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="static-script.js"></script>
+    <script src="load-nav.js"></script>
+</body>
+</html>

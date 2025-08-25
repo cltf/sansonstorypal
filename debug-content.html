@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内容调试</title>
+    <link rel="stylesheet" href="static-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .debug-section {
+            background: #ff0000;
+            color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border: 3px solid #000;
+        }
+    </style>
+</head>
+<body class="child-theme">
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <i class="fas fa-dragon"></i>
+                <span>StoryPal</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="debug-section">
+                调试：功能网格开始
+            </div>
+            
+            <div class="function-grid">
+                <div class="function-card scan-card">
+                    <div class="function-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="function-text">扫绘本，让角色活起来</div>
+                </div>
+                
+                <div class="function-card reading-card">
+                    <div class="function-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="function-text">为你推荐的书</div>
+                </div>
+            </div>
+
+            <div class="debug-section">
+                调试：今日推荐开始
+            </div>
+
+            <div class="today-recommendation">
+                <h3>今日推荐</h3>
+                <div class="recommendation-card">
+                    <div class="book-preview">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="book-info">
+                        <h4>The Very Hungry Caterpillar</h4>
+                        <p>跟着毛毛虫一起学习食物和数字吧！</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="debug-section">
+                调试：最近阅读开始
+            </div>
+
+            <div class="recent-reading">
+                <h3>最近阅读</h3>
+                <div class="reading-list">
+                    <div class="reading-item">
+                        <div class="book-cover">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="reading-info">
+                            <h4>Brown Bear, Brown Bear</h4>
+                            <p>阅读进度：75%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="debug-section">
+                调试：学习统计开始
+            </div>
+
+            <div class="learning-stats">
+                <h3>学习统计</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>本周阅读时长</h4>
+                            <p class="stat-value">2小时30分钟</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+

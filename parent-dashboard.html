@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryPal - 家长看板</title>
+    <link rel="stylesheet" href="static-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="parent-theme">
+    <div class="app-container">
+        <!-- 顶部栏 -->
+        <header class="app-header">
+            <div class="user-info">
+                <div class="avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="user-details">
+                    <h2>小明（6岁）</h2>
+                    <p class="level-info">CEFR Pre-A1（进步中）</p>
+                </div>
+            </div>
+            <button class="settings-btn" onclick="goToSettings()">
+                <i class="fas fa-cog"></i>
+            </button>
+        </header>
+
+        <!-- 数据概览 -->
+        <div class="data-overview">
+            <div class="overview-card">
+                <div class="overview-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="overview-content">
+                    <h3>今日阅读</h3>
+                    <p class="overview-value">25分钟</p>
+                    <p class="overview-change positive">+5分钟</p>
+                </div>
+            </div>
+
+            <div class="overview-card">
+                <div class="overview-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="overview-content">
+                    <h3>本周绘本</h3>
+                    <p class="overview-value">8本</p>
+                    <p class="overview-change positive">+2本</p>
+                </div>
+            </div>
+
+            <div class="overview-card">
+                <div class="overview-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="overview-content">
+                    <h3>获得星星</h3>
+                    <p class="overview-value">32★</p>
+                    <p class="overview-change positive">+8★</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 详细数据 -->
+        <main class="data-content">
+            <!-- 阅读时长图表 -->
+            <div class="data-card">
+                <div class="card-header">
+                    <h3>阅读时长趋势</h3>
+                    <div class="time-filter">
+                        <button class="filter-btn active" data-period="week">本周</button>
+                        <button class="filter-btn" data-period="month">本月</button>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-placeholder">
+                        <div class="chart-bars">
+                            <div class="bar" style="height: 60%">
+                                <span class="bar-label">周一</span>
+                            </div>
+                            <div class="bar" style="height: 80%">
+                                <span class="bar-label">周二</span>
+                            </div>
+                            <div class="bar" style="height: 45%">
+                                <span class="bar-label">周三</span>
+                            </div>
+                            <div class="bar" style="height: 90%">
+                                <span class="bar-label">周四</span>
+                            </div>
+                            <div class="bar" style="height: 70%">
+                                <span class="bar-label">周五</span>
+                            </div>
+                            <div class="bar" style="height: 85%">
+                                <span class="bar-label">周六</span>
+                            </div>
+                            <div class="bar" style="height: 75%">
+                                <span class="bar-label">周日</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-summary">
+                        <p>本周总时长：210分钟，较上周 +30分钟</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 词汇掌握 -->
+            <div class="data-card">
+                <div class="card-header">
+                    <h3>词汇掌握情况</h3>
+                    <span class="total-count">累计：85个</span>
+                </div>
+                <div class="vocabulary-stats">
+                    <div class="vocab-category">
+                        <div class="category-info">
+                            <span class="category-name">动物</span>
+                            <span class="category-count">25个</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 83%"></div>
+                        </div>
+                    </div>
+                    <div class="vocab-category">
+                        <div class="category-info">
+                            <span class="category-name">食物</span>
+                            <span class="category-count">20个</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 67%"></div>
+                        </div>
+                    </div>
+                    <div class="vocab-category">
+                        <div class="category-info">
+                            <span class="category-name">颜色</span>
+                            <span class="category-count">15个</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="vocab-category">
+                        <div class="category-info">
+                            <span class="category-name">数字</span>
+                            <span class="category-count">25个</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 发音准确率 -->
+            <div class="data-card">
+                <div class="card-header">
+                    <h3>发音准确率</h3>
+                    <div class="accuracy-display">
+                        <span class="accuracy-value">88%</span>
+                    </div>
+                </div>
+                <div class="pronunciation-details">
+                    <div class="accuracy-chart">
+                        <div class="accuracy-circle">
+                            <div class="accuracy-fill" style="--percentage: 88"></div>
+                            <span class="accuracy-text">88%</span>
+                        </div>
+                    </div>
+                    <div class="improvement-tips">
+                        <h4>需要提升的单词：</h4>
+                        <div class="word-list">
+                            <span class="word-item">elephant</span>
+                            <span class="word-item">butterfly</span>
+                            <span class="word-item">caterpillar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 近期阅读记录 -->
+            <div class="data-card">
+                <div class="card-header">
+                    <h3>近期阅读记录</h3>
+                    <button class="view-all-btn" onclick="viewAllRecords()">查看全部</button>
+                </div>
+                <div class="reading-history">
+                    <div class="history-item">
+                        <div class="book-info">
+                            <h4>The Very Hungry Caterpillar</h4>
+                            <p class="reading-time">2024-05-20 19:30</p>
+                        </div>
+                        <div class="reading-stats">
+                            <span class="duration">15分钟</span>
+                            <span class="accuracy">发音准确率 92%</span>
+                            <span class="new-words">掌握 5 个新单词</span>
+                        </div>
+                    </div>
+                    <div class="history-item">
+                        <div class="book-info">
+                            <h4>Brown Bear, Brown Bear</h4>
+                            <p class="reading-time">2024-05-19 18:15</p>
+                        </div>
+                        <div class="reading-stats">
+                            <span class="duration">12分钟</span>
+                            <span class="accuracy">发音准确率 88%</span>
+                            <span class="new-words">掌握 3 个新单词</span>
+                        </div>
+                    </div>
+                    <div class="history-item">
+                        <div class="book-info">
+                            <h4>Goodnight Moon</h4>
+                            <p class="reading-time">2024-05-18 20:00</p>
+                        </div>
+                        <div class="reading-stats">
+                            <span class="duration">10分钟</span>
+                            <span class="accuracy">发音准确率 95%</span>
+                            <span class="new-words">掌握 2 个新单词</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 底部导航 -->
+        <nav class="bottom-nav">
+            <div class="nav-item active" onclick="goToDashboard()">
+                <i class="fas fa-chart-bar"></i>
+                <span>看板</span>
+            </div>
+            <div class="nav-item" onclick="goToRemote()">
+                <i class="fas fa-microphone"></i>
+                <span>共读</span>
+            </div>
+            <div class="nav-item" onclick="goToSettings()">
+                <i class="fas fa-cog"></i>
+                <span>设置</span>
+            </div>
+            <div class="nav-item" onclick="goToProfile()">
+                <i class="fas fa-user"></i>
+                <span>我的</span>
+            </div>
+        </nav>
+    </div>
+
+    <!-- 详细数据弹窗 -->
+    <div class="modal hidden" id="detailModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="detailTitle">详细数据</h3>
+                <button class="close-btn" onclick="closeDetailModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="detailContent">
+                    <!-- 动态内容 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static-script.js"></script>
+</body>
+</html>
+
