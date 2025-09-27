@@ -1,0 +1,226 @@
+[
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_img_storypal.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/img_storypal.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_scan_button.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/scan_button.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_scan_card_background.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/scan_card_background.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_reading_card_background.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/reading_card_background.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_button_secondary.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/button_secondary.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/layout-sw720dp_activity_main.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/layout-sw720dp/activity_main.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_offline_card_background.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/offline_card_background.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_scan_border.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/scan_border.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/anim_card_lift.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/anim/card_lift.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/xml_data_extraction_rules.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_img_reading.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/img_reading.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/xml_backup_rules.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_palo_wave.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/palo_wave.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/anim_gentle_float.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/anim/gentle_float.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_ic_trophy.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/ic_trophy.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_ic_moon.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/ic_moon.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_palo_sleepy.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/palo_sleepy.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_img_scan.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/img_scan.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_circle_red.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/circle_red.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_reward_card_background.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/reward_card_background.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_card_children_rounded.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/card_children_rounded.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/anim_eye_care_transition.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/anim/eye_care_transition.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/layout_activity_child_home.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/layout/activity_child_home.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/layout_activity_child_rewards.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/layout/activity_child_rewards.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_task_card_background.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/task_card_background.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/layout-sw600dp_activity_main.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/layout-sw600dp/activity_main.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_ic_dragon.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/ic_dragon.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_ic_users.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/ic_users.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/layout_activity_child_reading.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/layout/activity_child_reading.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_palo_happy.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/palo_happy.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_img_offline.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/img_offline.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_ic_camera.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/ic_camera.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/layout_activity_main.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/layout_activity_child_scan.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/layout/activity_child_scan.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_ic_download.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/ic_download.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_button_primary.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/button_primary.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_button_children_primary.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/button_children_primary.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/anim_star_fly.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/anim/star_fly.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/anim_rainbow_sweep.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/anim/rainbow_sweep.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_ic_star.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/ic_star.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/layout_activity_parent_dashboard.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/layout/activity_parent_dashboard.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_img_task.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/img_task.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_ic_book.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/ic_book.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_palo_curious.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/palo_curious.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/drawable_palo_celebrate.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/drawable/palo_celebrate.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/anim_bounce_in.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/anim/bounce_in.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-xhdpi/ic_launcher.png"
+    }
+]

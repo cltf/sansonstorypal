@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_fairy_tale"
+    tools:context=".ChildRewardsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 顶部标题栏 - 玩具箱入口 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:background="@drawable/card_children_rounded"
+            android:elevation="6dp"
+            android:layout_margin="12dp">
+
+            <!-- 返回按钮 - 小恐龙Palo挥手 -->
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👋 回去"
+                android:background="@drawable/button_children_primary"
+                android:textColor="@color/text_white_soft"
+                android:textSize="14sp"
+                android:padding="12dp" />
+
+            <!-- 标题 - 玩具箱 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🎁 我的玩具箱"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/sky_blue_dark"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light" />
+
+        </LinearLayout>
+
+        <!-- 顶部数据 - 趣味化展示 -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 星星罐动画 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="20dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/reward_card_background">
+
+                        <!-- 透明卡通星星罐 -->
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginEnd="20dp">
+
+                            <!-- 星星罐 -->
+                            <View
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:background="@drawable/card_children_rounded"
+                                android:alpha="0.3" />
+
+                            <!-- 星星堆积效果 -->
+                            <ImageView
+                                android:id="@+id/ivStar1"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:src="@drawable/ic_star"
+                                android:contentDescription="星星"
+                                android:tint="@color/rainbow_yellow"
+                                android:layout_alignBottom="@id/ivStar2"
+                                android:layout_alignStart="@id/ivStar2"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp" />
+
+                            <ImageView
+                                android:id="@+id/ivStar2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_star"
+                                android:contentDescription="星星"
+                                android:tint="@color/rainbow_yellow"
+                                android:layout_centerInParent="true" />
+
+                            <ImageView
+                                android:id="@+id/ivStar3"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:src="@drawable/ic_star"
+                                android:contentDescription="星星"
+                                android:tint="@color/rainbow_yellow"
+                                android:layout_alignTop="@id/ivStar2"
+                                android:layout_alignEnd="@id/ivStar2"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginEnd="4dp" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="128"
+                                android:textSize="36sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_white_soft" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="✨ 我的小星星"
+                                android:textSize="16sp"
+                                android:textColor="@color/pink_light" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- 彩虹桥+角色前进进度 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        android:background="@drawable/reading_card_background">
+
+                        <!-- 彩虹桥进度条 -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="8dp">
+
+                            <!-- 彩虹桥背景 -->
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp"
+                                android:background="@drawable/card_children_rounded"
+                                android:layout_centerVertical="true"
+                                android:alpha="0.3" />
+
+                            <!-- 彩虹进度 -->
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="8dp"
+                                android:background="@drawable/card_children_rounded"
+                                android:layout_centerVertical="true"
+                                android:alpha="0.8" />
+
+                            <!-- 小恐龙Palo在彩虹桥上走 -->
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/ic_dragon"
+                                android:contentDescription="小恐龙Palo"
+                                android:tint="@color/sky_blue"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="60dp" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌈 再走3步就能遇到小兔子啦！"
+                            android:textSize="14sp"
+                            android:textColor="@color/text_white_soft"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- 奖励分类区 - 场景化陈列 -->
+                
+                <!-- 角色皮肤 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnMyAchievements"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="20dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/task_card_background">
+
+                        <!-- AR角色试穿皮肤场景 -->
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="16dp">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/ic_dragon"
+                                android:contentDescription="毛毛虫穿彩虹皮肤"
+                                android:tint="@color/rainbow_yellow"
+                                android:background="@drawable/card_children_rounded"
+                                android:padding="8dp" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="🎭 角色皮肤"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_white_soft" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="给AR角色换新衣服"
+                                android:textSize="14sp"
+                                android:textColor="@color/warm_orange_light" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_star"
+                            android:contentDescription="已解锁"
+                            android:tint="@color/rainbow_yellow" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- 贴纸 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnDailyRewards"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="20dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/offline_card_background">
+
+                        <!-- 卡通相册样式 -->
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="16dp">
+
+                            <View
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@drawable/card_children_rounded"
+                                android:alpha="0.8" />
+
+                            <!-- 贴纸预览 -->
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_star"
+                                android:contentDescription="贴纸"
+                                android:tint="@color/rainbow_red"
+                                android:layout_centerInParent="true" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="📸 贴纸本"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_white_soft" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="收集可爱的小贴纸"
+                                android:textSize="14sp"
+                                android:textColor="@color/lavender_light" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_star"
+                            android:contentDescription="已解锁"
+                            android:tint="@color/rainbow_yellow" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- 虚拟宠物 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnLevelProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="20dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/scan_card_background">
+
+                        <!-- 宠物小房子 -->
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="16dp">
+
+                            <!-- 小恐龙的火山房子 -->
+                            <View
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@drawable/card_children_rounded"
+                                android:alpha="0.8" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_dragon"
+                                android:contentDescription="小恐龙"
+                                android:tint="@color/mint_green"
+                                android:layout_centerInParent="true" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="🐾 虚拟宠物"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_white_soft" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="和小伙伴一起读绘本"
+                                android:textSize="14sp"
+                                android:textColor="@color/mint_green_light" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_star"
+                            android:contentDescription="已解锁"
+                            android:tint="@color/rainbow_yellow" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    
+    <!-- 阅读模块专属天空蓝背景 -->
+    <corners android:radius="16dp" />
+    <solid android:color="@color/reading_card" />
+    
+    <!-- 渐变效果 -->
+    <gradient
+        android:angle="135"
+        android:startColor="@color/sky_blue_light"
+        android:endColor="@color/sky_blue_dark"
+        android:type="linear" />
+    
+    <!-- 轻微边框 -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/sky_blue_light" />
+    
+</shape>

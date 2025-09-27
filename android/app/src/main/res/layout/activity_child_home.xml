@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_fairy_tale"
+    tools:context=".ChildHomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 顶部标题栏 - IP化设计 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:background="@drawable/card_children_rounded"
+            android:elevation="6dp"
+            android:layout_margin="12dp">
+
+            <!-- StoryPal左侧图片 -->
+            <ImageView
+                android:id="@+id/ivPaloMascot"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/img_storypal"
+                android:contentDescription="StoryPal吉祥物"
+                android:background="@drawable/button_children_primary"
+                android:padding="8dp" />
+
+            <!-- StoryPal品牌标题 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="StoryPal"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/sky_blue_dark"
+                    android:fontFamily="sans-serif-light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今天也要开心读绘本呀！"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary_soft"
+                    android:layout_marginTop="2dp" />
+
+            </LinearLayout>
+
+            <!-- 彩虹星星奖励中心 -->
+            <LinearLayout
+                android:id="@+id/llRewardCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/reward_card_background"
+                android:padding="12dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/ivRainbowStar"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_star"
+                    android:contentDescription="彩虹星星"
+                    android:tint="@color/rainbow_yellow" />
+
+                <TextView
+                    android:id="@+id/tvStarCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="128"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_white_soft"
+                    android:layout_marginStart="6dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 主要功能区域 - 童话小镇入口 -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 功能卡片网格 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- 第一行 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="16dp">
+
+                        <!-- 绘本扫描 - 绿色相机+翻开的绘本场景 -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardScan"
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="8dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/scan_card_background"
+                                android:padding="16dp">
+
+                                <!-- 绘本扫描图片 -->
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/img_scan"
+                                    android:contentDescription="绘本扫描"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="把绘本给Palo看看吧！"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/text_white_soft"
+                                    android:textAlignment="center"
+                                    android:layout_marginTop="12dp" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- 推荐阅读 - 蓝色书本+小恐龙Palo场景 -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardReading"
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="8dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/reading_card_background"
+                                android:padding="16dp">
+
+                                <!-- 推荐阅读图片 -->
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/img_reading"
+                                    android:contentDescription="推荐阅读"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Palo推荐的有趣故事"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/text_white_soft"
+                                    android:textAlignment="center"
+                                    android:layout_marginTop="12dp" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- 第二行 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="16dp">
+
+                        <!-- 我的任务 - 橙色奖杯+小星星环绕场景 -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardTask"
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="8dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/task_card_background"
+                                android:padding="16dp">
+
+                                <!-- 任务图片 -->
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/img_task"
+                                    android:contentDescription="今日任务"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="今天的小任务"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/text_white_soft"
+                                    android:textAlignment="center"
+                                    android:layout_marginTop="12dp" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- 离线绘本 - 灰色云朵+WiFi断开+绘本场景 -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardOffline"
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="8dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/offline_card_background"
+                                android:padding="16dp">
+
+                                <!-- 离线阅读图片 -->
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/img_offline"
+                                    android:contentDescription="离线阅读"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="没网也能读的故事"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/text_white_soft"
+                                    android:textAlignment="center"
+                                    android:layout_marginTop="12dp" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- 底部操作栏 - 弱化但有温度 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:background="@drawable/card_children_rounded"
+            android:elevation="6dp"
+            android:layout_margin="12dp">
+
+            <!-- 找爸爸妈妈 - 小房子+爸爸妈妈牵手图标 -->
+            <Button
+                android:id="@+id/btnFindParents"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="找爸爸妈妈 💕"
+                android:drawableStart="@drawable/ic_users"
+                android:drawablePadding="8dp"
+                android:background="@drawable/button_children_primary"
+                android:textColor="@color/text_white_soft"
+                android:textSize="14sp"
+                android:layout_marginEnd="12dp"
+                android:padding="12dp" />
+
+            <!-- 护眼模式 - 戴墨镜的小太阳 -->
+            <Button
+                android:id="@+id/btnEyeProtection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="护眼模式 ☀️"
+                android:drawableStart="@drawable/ic_moon"
+                android:drawablePadding="8dp"
+                android:background="@drawable/button_children_primary"
+                android:textColor="@color/text_white_soft"
+                android:textSize="14sp"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

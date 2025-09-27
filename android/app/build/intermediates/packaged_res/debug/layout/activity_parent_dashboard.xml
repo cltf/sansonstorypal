@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_fairy_tale"
+    tools:context=".ParentDashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 顶部标题栏 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="@color/background_card_soft"
+            android:elevation="4dp">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:background="@drawable/button_secondary"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/parent_dashboard_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary_soft"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- 统计信息卡片 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:background="@color/background_card_soft"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今日阅读(分钟)"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary_soft"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/scan_card" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="完成书籍"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary_soft"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="85%"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/warm_orange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学习进度"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary_soft"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 功能按钮区域 -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnReadingProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="@string/reading_progress"
+                    android:textSize="18sp"
+                    android:drawableStart="@drawable/ic_book"
+                    android:drawablePadding="16dp"
+                    android:background="@drawable/button_primary"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnTimeControl"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="@string/time_control"
+                    android:textSize="18sp"
+                    android:drawableStart="@drawable/ic_moon"
+                    android:drawablePadding="16dp"
+                    android:background="@drawable/button_secondary"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnRemoteReading"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="@string/remote_reading"
+                    android:textSize="18sp"
+                    android:drawableStart="@drawable/ic_users"
+                    android:drawablePadding="16dp"
+                    android:background="@drawable/button_secondary"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnDeviceSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="@string/device_settings"
+                    android:textSize="18sp"
+                    android:drawableStart="@drawable/ic_download"
+                    android:drawablePadding="16dp"
+                    android:background="@drawable/button_secondary"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

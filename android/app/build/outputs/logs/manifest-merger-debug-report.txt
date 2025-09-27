@@ -1,0 +1,448 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:2:1-65:12
+MERGED from [androidx.databinding:viewbinding:8.2.2] /Users/chenlei/.gradle/caches/transforms-3/b9a7865eaade1426fa04e0f22a526630/transformed/viewbinding-8.2.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-common:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/594492f65664a52b9484ff7f5c6ecf2e/transformed/navigation-common-2.7.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/8b09b291dfc863af0f4109271e313e9e/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/a40980d3990256e2ebaa6c03064195d0/transformed/navigation-runtime-2.7.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/5b8c7784a4442d5ff774b0435b6d16ae/transformed/navigation-runtime-ktx-2.7.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-fragment:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/e8a504a1037510e257808bdfa3c2a0ae/transformed/navigation-fragment-2.7.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/366b390aaa3f2a11201b4cbf5c43a3b8/transformed/navigation-fragment-ktx-2.7.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/5116f93f57c2fb3822a13ae458f95cd2/transformed/navigation-ui-ktx-2.7.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-ui:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/8670082fbba7787aaaa303f31d4da9e1/transformed/navigation-ui-2.7.5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.10.0] /Users/chenlei/.gradle/caches/transforms-3/9f428374d3475d1b0ef157f3a2682ea4/transformed/material-1.10.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/chenlei/.gradle/caches/transforms-3/1de4143911f038f074128cdaae9e11c4/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/chenlei/.gradle/caches/transforms-3/704f8145cb4b4ad2fc41cf50247cae8c/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/chenlei/.gradle/caches/transforms-3/9622e7210bf2aacc7d50b832c6182663/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.16.0] /Users/chenlei/.gradle/caches/transforms-3/ac48ae4f490debbdc68ac26c8ae74c5b/transformed/glide-4.16.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /Users/chenlei/.gradle/caches/transforms-3/2b4b583f023dbb778528d4e7ceb8b54e/transformed/recyclerview-1.3.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /Users/chenlei/.gradle/caches/transforms-3/688814094a1f42df0928dc48a1b53979/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.6.2] /Users/chenlei/.gradle/caches/transforms-3/8a7482f6103038f2af18ecf2e46c1287/transformed/fragment-1.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] /Users/chenlei/.gradle/caches/transforms-3/67f15670872f46746f84467ee04b0961/transformed/fragment-ktx-1.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/7dbcc5fb7404f41c7f586272c60d3aae/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.activity:activity:1.8.0] /Users/chenlei/.gradle/caches/transforms-3/429b5ca5aa34d9741d73edf66119f84e/transformed/activity-1.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/chenlei/.gradle/caches/transforms-3/4dffa6276bfdab8d94774107ab7f80f7/transformed/activity-ktx-1.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/chenlei/.gradle/caches/transforms-3/420c74507d1697f7c55012664043b240/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/chenlei/.gradle/caches/transforms-3/3845a5036b4480ea212d6357c5e23179/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/d2d6c63cbd892bfc02356f255e054510/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/ff673a2bb90a9bfa14d5721d629b181b/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/e4389ae82703b5ee847d3f5961fadda8/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/4961b22178803c291ecec08e1d5bc261/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/92f0ffbf4ca31f76f17ff2a4553b7a14/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/70addde470580cc7dc87e1ff30a30a54/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/397ac744bb941bc79fb1f6033ee8b01d/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/5ba8f27b4cef76bc78dc1a7660b29042/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/0092e472ec1cc00988e5a6d11f8f5ec3/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/138fe8fe797628129fd03b449c3c6c5c/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/90681d521083a7605ef865a2db5abe2c/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/f1052eeb258a24f6f6662a76d1c7c959/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/chenlei/.gradle/caches/transforms-3/2e2bfd7564e685b6ec313b378f5fe5ba/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/chenlei/.gradle/caches/transforms-3/1b5f66f9ffc430edc8b0b06664026979/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/chenlei/.gradle/caches/transforms-3/12b923aa4b0472590cebac7e4bab3f3f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/293ef6df79223abb8cbe20fdc06eb511/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/29db062587c1230a610ac11f82e26e34/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/chenlei/.gradle/caches/transforms-3/bde1170a7001737da35a90f00682e913/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.4.1] /Users/chenlei/.gradle/caches/transforms-3/86d051da7c0ea4f9633059372edbd990/transformed/transition-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/d6deacb558c9567400a04bbedde1a5f1/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/c736645dfcee7a3e9aba31a61351be3b/transformed/lifecycle-livedata-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/9df32f6e3d5fe0409ade713666b31a0d/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/c4bd217a6e71a56d8d606501a41814ce/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/4286b33910665024c018aadcb6771c91/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] /Users/chenlei/.gradle/caches/transforms-3/0d0b0ed6daae2723cf2cf803645f263d/transformed/gifdecoder-4.16.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /Users/chenlei/.gradle/caches/transforms-3/d73c1ad7e6bfff9c4fc58d48f7435ef1/transformed/exifinterface-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/4643d2be8c5589fdc921a681b1e6171d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/59657792db80761ddf9cd542adc43413/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/c6535ed6f87237163b74bfe37f266ad1/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/6ea873f6eab0cb7fc0c2ea363ed3bc3a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/chenlei/.gradle/caches/transforms-3/f3e2973776d5618161eddcfdf5a9b641/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/bd756131378892540ac48a8a2e50a885/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/5f23e2542b9a691eb0da045fa10bf385/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/3c3df7bba4407ad56dcbaa89d89aa67f/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/7e48e05f61c52e6f81f75d77ed361efa/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.CAMERA
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:6:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:8:22-77
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:9:22-76
+application
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:11:5-63:19
+INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:11:5-63:19
+MERGED from [com.google.android.material:material:1.10.0] /Users/chenlei/.gradle/caches/transforms-3/9f428374d3475d1b0ef157f3a2682ea4/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.10.0] /Users/chenlei/.gradle/caches/transforms-3/9f428374d3475d1b0ef157f3a2682ea4/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/chenlei/.gradle/caches/transforms-3/1de4143911f038f074128cdaae9e11c4/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/chenlei/.gradle/caches/transforms-3/1de4143911f038f074128cdaae9e11c4/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/4643d2be8c5589fdc921a681b1e6171d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/4643d2be8c5589fdc921a681b1e6171d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/6ea873f6eab0cb7fc0c2ea363ed3bc3a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/6ea873f6eab0cb7fc0c2ea363ed3bc3a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:18:9-35
+	android:label
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:16:9-41
+	android:fullBackupContent
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:14:9-54
+	android:roundIcon
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:17:9-54
+	tools:targetApi
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:20:9-29
+	android:icon
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:15:9-43
+	android:allowBackup
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:19:9-46
+	android:dataExtractionRules
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:13:9-65
+activity#com.sansheng.storypal.MainActivity
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:22:9-31:20
+	android:screenOrientation
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:25:13-49
+	android:exported
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:24:13-36
+	android:theme
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:26:13-50
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:23:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:27:13-30:29
+action#android.intent.action.MAIN
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:29:27-74
+activity#com.sansheng.storypal.ChildHomeActivity
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:33:9-37:53
+	android:screenOrientation
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:36:13-49
+	android:exported
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:35:13-37
+	android:theme
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:37:13-50
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:34:13-46
+activity#com.sansheng.storypal.ChildScanActivity
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:39:9-43:53
+	android:screenOrientation
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:42:13-49
+	android:exported
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:41:13-37
+	android:theme
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:43:13-50
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:40:13-46
+activity#com.sansheng.storypal.ChildReadingActivity
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:45:9-49:53
+	android:screenOrientation
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:48:13-49
+	android:exported
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:47:13-37
+	android:theme
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:49:13-50
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:46:13-49
+activity#com.sansheng.storypal.ChildRewardsActivity
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:51:9-55:53
+	android:screenOrientation
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:54:13-49
+	android:exported
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:53:13-37
+	android:theme
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:55:13-50
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:52:13-49
+activity#com.sansheng.storypal.ParentDashboardActivity
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:57:9-61:53
+	android:screenOrientation
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:60:13-49
+	android:exported
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:59:13-37
+	android:theme
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:61:13-50
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:58:13-52
+uses-sdk
+INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:8.2.2] /Users/chenlei/.gradle/caches/transforms-3/b9a7865eaade1426fa04e0f22a526630/transformed/viewbinding-8.2.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.2.2] /Users/chenlei/.gradle/caches/transforms-3/b9a7865eaade1426fa04e0f22a526630/transformed/viewbinding-8.2.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/594492f65664a52b9484ff7f5c6ecf2e/transformed/navigation-common-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/594492f65664a52b9484ff7f5c6ecf2e/transformed/navigation-common-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/8b09b291dfc863af0f4109271e313e9e/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/8b09b291dfc863af0f4109271e313e9e/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/a40980d3990256e2ebaa6c03064195d0/transformed/navigation-runtime-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/a40980d3990256e2ebaa6c03064195d0/transformed/navigation-runtime-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/5b8c7784a4442d5ff774b0435b6d16ae/transformed/navigation-runtime-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/5b8c7784a4442d5ff774b0435b6d16ae/transformed/navigation-runtime-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/e8a504a1037510e257808bdfa3c2a0ae/transformed/navigation-fragment-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/e8a504a1037510e257808bdfa3c2a0ae/transformed/navigation-fragment-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/366b390aaa3f2a11201b4cbf5c43a3b8/transformed/navigation-fragment-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/366b390aaa3f2a11201b4cbf5c43a3b8/transformed/navigation-fragment-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/5116f93f57c2fb3822a13ae458f95cd2/transformed/navigation-ui-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/5116f93f57c2fb3822a13ae458f95cd2/transformed/navigation-ui-ktx-2.7.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/8670082fbba7787aaaa303f31d4da9e1/transformed/navigation-ui-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/8670082fbba7787aaaa303f31d4da9e1/transformed/navigation-ui-2.7.5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.10.0] /Users/chenlei/.gradle/caches/transforms-3/9f428374d3475d1b0ef157f3a2682ea4/transformed/material-1.10.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.10.0] /Users/chenlei/.gradle/caches/transforms-3/9f428374d3475d1b0ef157f3a2682ea4/transformed/material-1.10.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/chenlei/.gradle/caches/transforms-3/1de4143911f038f074128cdaae9e11c4/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/chenlei/.gradle/caches/transforms-3/1de4143911f038f074128cdaae9e11c4/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/chenlei/.gradle/caches/transforms-3/704f8145cb4b4ad2fc41cf50247cae8c/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/chenlei/.gradle/caches/transforms-3/704f8145cb4b4ad2fc41cf50247cae8c/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/chenlei/.gradle/caches/transforms-3/9622e7210bf2aacc7d50b832c6182663/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/chenlei/.gradle/caches/transforms-3/9622e7210bf2aacc7d50b832c6182663/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.16.0] /Users/chenlei/.gradle/caches/transforms-3/ac48ae4f490debbdc68ac26c8ae74c5b/transformed/glide-4.16.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.16.0] /Users/chenlei/.gradle/caches/transforms-3/ac48ae4f490debbdc68ac26c8ae74c5b/transformed/glide-4.16.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /Users/chenlei/.gradle/caches/transforms-3/2b4b583f023dbb778528d4e7ceb8b54e/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /Users/chenlei/.gradle/caches/transforms-3/2b4b583f023dbb778528d4e7ceb8b54e/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /Users/chenlei/.gradle/caches/transforms-3/688814094a1f42df0928dc48a1b53979/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /Users/chenlei/.gradle/caches/transforms-3/688814094a1f42df0928dc48a1b53979/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.6.2] /Users/chenlei/.gradle/caches/transforms-3/8a7482f6103038f2af18ecf2e46c1287/transformed/fragment-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.6.2] /Users/chenlei/.gradle/caches/transforms-3/8a7482f6103038f2af18ecf2e46c1287/transformed/fragment-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] /Users/chenlei/.gradle/caches/transforms-3/67f15670872f46746f84467ee04b0961/transformed/fragment-ktx-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] /Users/chenlei/.gradle/caches/transforms-3/67f15670872f46746f84467ee04b0961/transformed/fragment-ktx-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/7dbcc5fb7404f41c7f586272c60d3aae/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/7dbcc5fb7404f41c7f586272c60d3aae/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.activity:activity:1.8.0] /Users/chenlei/.gradle/caches/transforms-3/429b5ca5aa34d9741d73edf66119f84e/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /Users/chenlei/.gradle/caches/transforms-3/429b5ca5aa34d9741d73edf66119f84e/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/chenlei/.gradle/caches/transforms-3/4dffa6276bfdab8d94774107ab7f80f7/transformed/activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/chenlei/.gradle/caches/transforms-3/4dffa6276bfdab8d94774107ab7f80f7/transformed/activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/chenlei/.gradle/caches/transforms-3/420c74507d1697f7c55012664043b240/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/chenlei/.gradle/caches/transforms-3/420c74507d1697f7c55012664043b240/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/chenlei/.gradle/caches/transforms-3/3845a5036b4480ea212d6357c5e23179/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/chenlei/.gradle/caches/transforms-3/3845a5036b4480ea212d6357c5e23179/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/d2d6c63cbd892bfc02356f255e054510/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/d2d6c63cbd892bfc02356f255e054510/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/ff673a2bb90a9bfa14d5721d629b181b/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/ff673a2bb90a9bfa14d5721d629b181b/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/e4389ae82703b5ee847d3f5961fadda8/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/e4389ae82703b5ee847d3f5961fadda8/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/4961b22178803c291ecec08e1d5bc261/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/4961b22178803c291ecec08e1d5bc261/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/92f0ffbf4ca31f76f17ff2a4553b7a14/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/92f0ffbf4ca31f76f17ff2a4553b7a14/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/70addde470580cc7dc87e1ff30a30a54/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/70addde470580cc7dc87e1ff30a30a54/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/397ac744bb941bc79fb1f6033ee8b01d/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/397ac744bb941bc79fb1f6033ee8b01d/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/5ba8f27b4cef76bc78dc1a7660b29042/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/5ba8f27b4cef76bc78dc1a7660b29042/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/0092e472ec1cc00988e5a6d11f8f5ec3/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/0092e472ec1cc00988e5a6d11f8f5ec3/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/138fe8fe797628129fd03b449c3c6c5c/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/138fe8fe797628129fd03b449c3c6c5c/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/90681d521083a7605ef865a2db5abe2c/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/90681d521083a7605ef865a2db5abe2c/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/f1052eeb258a24f6f6662a76d1c7c959/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/f1052eeb258a24f6f6662a76d1c7c959/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/chenlei/.gradle/caches/transforms-3/2e2bfd7564e685b6ec313b378f5fe5ba/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/chenlei/.gradle/caches/transforms-3/2e2bfd7564e685b6ec313b378f5fe5ba/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/chenlei/.gradle/caches/transforms-3/1b5f66f9ffc430edc8b0b06664026979/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/chenlei/.gradle/caches/transforms-3/1b5f66f9ffc430edc8b0b06664026979/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/chenlei/.gradle/caches/transforms-3/12b923aa4b0472590cebac7e4bab3f3f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/chenlei/.gradle/caches/transforms-3/12b923aa4b0472590cebac7e4bab3f3f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/293ef6df79223abb8cbe20fdc06eb511/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/293ef6df79223abb8cbe20fdc06eb511/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/29db062587c1230a610ac11f82e26e34/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/29db062587c1230a610ac11f82e26e34/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /Users/chenlei/.gradle/caches/transforms-3/bde1170a7001737da35a90f00682e913/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/chenlei/.gradle/caches/transforms-3/bde1170a7001737da35a90f00682e913/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] /Users/chenlei/.gradle/caches/transforms-3/86d051da7c0ea4f9633059372edbd990/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] /Users/chenlei/.gradle/caches/transforms-3/86d051da7c0ea4f9633059372edbd990/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/d6deacb558c9567400a04bbedde1a5f1/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/d6deacb558c9567400a04bbedde1a5f1/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/c736645dfcee7a3e9aba31a61351be3b/transformed/lifecycle-livedata-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/c736645dfcee7a3e9aba31a61351be3b/transformed/lifecycle-livedata-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/9df32f6e3d5fe0409ade713666b31a0d/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/9df32f6e3d5fe0409ade713666b31a0d/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/c4bd217a6e71a56d8d606501a41814ce/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/c4bd217a6e71a56d8d606501a41814ce/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/4286b33910665024c018aadcb6771c91/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/4286b33910665024c018aadcb6771c91/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] /Users/chenlei/.gradle/caches/transforms-3/0d0b0ed6daae2723cf2cf803645f263d/transformed/gifdecoder-4.16.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] /Users/chenlei/.gradle/caches/transforms-3/0d0b0ed6daae2723cf2cf803645f263d/transformed/gifdecoder-4.16.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /Users/chenlei/.gradle/caches/transforms-3/d73c1ad7e6bfff9c4fc58d48f7435ef1/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /Users/chenlei/.gradle/caches/transforms-3/d73c1ad7e6bfff9c4fc58d48f7435ef1/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/4643d2be8c5589fdc921a681b1e6171d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/4643d2be8c5589fdc921a681b1e6171d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/59657792db80761ddf9cd542adc43413/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/59657792db80761ddf9cd542adc43413/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/c6535ed6f87237163b74bfe37f266ad1/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/c6535ed6f87237163b74bfe37f266ad1/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/6ea873f6eab0cb7fc0c2ea363ed3bc3a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/6ea873f6eab0cb7fc0c2ea363ed3bc3a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/chenlei/.gradle/caches/transforms-3/f3e2973776d5618161eddcfdf5a9b641/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/chenlei/.gradle/caches/transforms-3/f3e2973776d5618161eddcfdf5a9b641/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/bd756131378892540ac48a8a2e50a885/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/bd756131378892540ac48a8a2e50a885/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/5f23e2542b9a691eb0da045fa10bf385/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/5f23e2542b9a691eb0da045fa10bf385/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/3c3df7bba4407ad56dcbaa89d89aa67f/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/3c3df7bba4407ad56dcbaa89d89aa67f/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/7e48e05f61c52e6f81f75d77ed361efa/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/7e48e05f61c52e6f81f75d77ed361efa/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/4643d2be8c5589fdc921a681b1e6171d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/chenlei/.gradle/caches/transforms-3/4643d2be8c5589fdc921a681b1e6171d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+permission#com.sansheng.storypal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+uses-permission#com.sansheng.storypal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92

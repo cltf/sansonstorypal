@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基础颜色 -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- 儿童友好色彩系统 - 马卡龙+明亮色系 -->
+    
+    <!-- 主色调 - 天空蓝系（阅读模块） -->
+    <color name="sky_blue_light">#FF87CEEB</color>    <!-- 浅天空蓝 -->
+    <color name="sky_blue">#FF4FC3F7</color>         <!-- 天空蓝 -->
+    <color name="sky_blue_dark">#FF29B6F6</color>     <!-- 深天空蓝 -->
+    
+    <!-- 薄荷绿系（扫描模块） -->
+    <color name="mint_green_light">#FF98FB98</color>  <!-- 浅薄荷绿 -->
+    <color name="mint_green">#FF81C784</color>        <!-- 薄荷绿 -->
+    <color name="mint_green_dark">#FF66BB6A</color>   <!-- 深薄荷绿 -->
+    
+    <!-- 暖橙系（任务模块） -->
+    <color name="warm_orange_light">#FFFFB74D</color> <!-- 浅暖橙 -->
+    <color name="warm_orange">#FFFF9800</color>       <!-- 暖橙 -->
+    <color name="warm_orange_dark">#FFF57C00</color>  <!-- 深暖橙 -->
+    
+    <!-- 薰衣草紫系（离线模块） -->
+    <color name="lavender_light">#FFE1BEE7</color>    <!-- 浅薰衣草紫 -->
+    <color name="lavender">#FFBA68C8</color>          <!-- 薰衣草紫 -->
+    <color name="lavender_dark">#FFAB47BC</color>     <!-- 深薰衣草紫 -->
+    
+    <!-- 粉红系（奖励模块） -->
+    <color name="pink_light">#FFF8BBD9</color>        <!-- 浅粉红 -->
+    <color name="pink">#FFF48FB1</color>              <!-- 粉红 -->
+    <color name="pink_dark">#FFEC407A</color>         <!-- 深粉红 -->
+    
+    <!-- 背景色系 -->
+    <color name="background_fairy_tale">#FFF0F8FF</color>     <!-- 童话森林背景 -->
+    <color name="background_card_soft">#FFFEFEFE</color>      <!-- 柔和卡片背景 -->
+    <color name="background_overlay">#33000000</color>        <!-- 半透明遮罩 -->
+    
+    <!-- 文字颜色 - 儿童友好 -->
+    <color name="text_primary_soft">#FF424242</color>         <!-- 柔和主文字 -->
+    <color name="text_secondary_soft">#FF757575</color>       <!-- 柔和次文字 -->
+    <color name="text_hint_soft">#FFBDBDBD</color>            <!-- 柔和提示文字 -->
+    <color name="text_white_soft">#FFF5F5F5</color>           <!-- 柔和白文字 -->
+    
+    <!-- 功能模块专属色系 -->
+    <color name="scan_card">#FF81C784</color>         <!-- 扫描卡片 - 薄荷绿 -->
+    <color name="reading_card">#FF4FC3F7</color>      <!-- 阅读卡片 - 天空蓝 -->
+    <color name="task_card">#FFFF9800</color>         <!-- 任务卡片 - 暖橙 -->
+    <color name="offline_card">#FFBA68C8</color>      <!-- 离线卡片 - 薰衣草紫 -->
+    <color name="reward_card">#FFF48FB1</color>       <!-- 奖励卡片 - 粉红 -->
+    
+    <!-- 状态颜色 - 儿童友好版 -->
+    <color name="success_soft">#FF81C784</color>      <!-- 柔和成功绿 -->
+    <color name="warning_soft">#FFFFB74D</color>      <!-- 柔和警告橙 -->
+    <color name="error_soft">#FFEF5350</color>        <!-- 柔和错误红 -->
+    <color name="info_soft">#FF4FC3F7</color>         <!-- 柔和信息蓝 -->
+    
+    <!-- 彩虹色系（奖励特效） -->
+    <color name="rainbow_red">#FFFF6B6B</color>
+    <color name="rainbow_orange">#FFFFB74D</color>
+    <color name="rainbow_yellow">#FFFFF176</color>
+    <color name="rainbow_green">#FF81C784</color>
+    <color name="rainbow_blue">#FF4FC3F7</color>
+    <color name="rainbow_purple">#FFBA68C8</color>
+    
+    <!-- 护眼模式色系 -->
+    <color name="eye_care_bg">#FFFDF6E3</color>        <!-- 护眼背景 -->
+    <color name="eye_care_card">#FFFEFCF0</color>      <!-- 护眼卡片 -->
+    <color name="eye_care_text">#FF8B4513</color>      <!-- 护眼文字 -->
+</resources>
+
+

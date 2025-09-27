@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_fairy_tale"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- 标题栏 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="24dp"
+            android:background="@color/background_card_soft"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_dragon"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary_soft"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/star_count"
+                android:textSize="20sp"
+                android:textColor="@color/warm_orange"
+                android:drawableStart="@drawable/ic_star"
+                android:drawablePadding="8dp" />
+
+        </LinearLayout>
+
+        <!-- 平板布局 - 两列网格 -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 儿童端功能 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="儿童端功能"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary_soft"
+                    android:layout_marginBottom="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <Button
+                        android:id="@+id/btnChildHome"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:text="儿童端首页"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/button_primary"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btnChildScan"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:text="绘本扫描"
+                        android:textSize="18sp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/button_secondary"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="24dp">
+
+                    <Button
+                        android:id="@+id/btnChildReading"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:text="阅读列表"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/button_secondary"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btnChildRewards"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:text="奖励中心"
+                        android:textSize="18sp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/button_secondary"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <!-- 家长端功能 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="家长端功能"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary_soft"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnParentDashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="家长看板"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/button_primary"
+                    android:textColor="@color/white" />
+
+                <!-- 设备功能 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="设备功能"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary_soft"
+                    android:layout_marginBottom="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnDeviceConnect"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:text="设备连接"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/button_secondary"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btnProjectorMode"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:text="投影模式"
+                        android:textSize="18sp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/button_secondary"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

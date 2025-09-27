@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="background_card_soft">#FFFEFEFE</color>
+    <color name="background_fairy_tale">#FFF0F8FF</color>
+    <color name="background_overlay">#33000000</color>
+    <color name="black">#FF000000</color>
+    <color name="error_soft">#FFEF5350</color>
+    <color name="eye_care_bg">#FFFDF6E3</color>
+    <color name="eye_care_card">#FFFEFCF0</color>
+    <color name="eye_care_text">#FF8B4513</color>
+    <color name="info_soft">#FF4FC3F7</color>
+    <color name="lavender">#FFBA68C8</color>
+    <color name="lavender_dark">#FFAB47BC</color>
+    <color name="lavender_light">#FFE1BEE7</color>
+    <color name="mint_green">#FF81C784</color>
+    <color name="mint_green_dark">#FF66BB6A</color>
+    <color name="mint_green_light">#FF98FB98</color>
+    <color name="offline_card">#FFBA68C8</color>
+    <color name="pink">#FFF48FB1</color>
+    <color name="pink_dark">#FFEC407A</color>
+    <color name="pink_light">#FFF8BBD9</color>
+    <color name="rainbow_blue">#FF4FC3F7</color>
+    <color name="rainbow_green">#FF81C784</color>
+    <color name="rainbow_orange">#FFFFB74D</color>
+    <color name="rainbow_purple">#FFBA68C8</color>
+    <color name="rainbow_red">#FFFF6B6B</color>
+    <color name="rainbow_yellow">#FFFFF176</color>
+    <color name="reading_card">#FF4FC3F7</color>
+    <color name="reward_card">#FFF48FB1</color>
+    <color name="scan_card">#FF81C784</color>
+    <color name="sky_blue">#FF4FC3F7</color>
+    <color name="sky_blue_dark">#FF29B6F6</color>
+    <color name="sky_blue_light">#FF87CEEB</color>
+    <color name="success_soft">#FF81C784</color>
+    <color name="task_card">#FFFF9800</color>
+    <color name="text_hint_soft">#FFBDBDBD</color>
+    <color name="text_primary_soft">#FF424242</color>
+    <color name="text_secondary_soft">#FF757575</color>
+    <color name="text_white_soft">#FFF5F5F5</color>
+    <color name="transparent">#00000000</color>
+    <color name="warm_orange">#FFFF9800</color>
+    <color name="warm_orange_dark">#FFF57C00</color>
+    <color name="warm_orange_light">#FFFFB74D</color>
+    <color name="warning_soft">#FFFFB74D</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Sanson StoryPal</string>
+    <string name="back">返回</string>
+    <string name="cache_count">8本</string>
+    <string name="cancel">取消</string>
+    <string name="child_home_title">Sanson StoryPal</string>
+    <string name="confirm">确认</string>
+    <string name="daily_mission">今日闯关任务</string>
+    <string name="daily_rewards">每日奖励</string>
+    <string name="device_settings">设备设置</string>
+    <string name="difficulty_pre_a1">Pre-A1</string>
+    <string name="error">错误</string>
+    <string name="eye_protection">护眼模式</string>
+    <string name="find_parents">找爸爸妈妈</string>
+    <string name="help">帮助</string>
+    <string name="level_progress">等级进度</string>
+    <string name="loading">加载中...</string>
+    <string name="my_achievements">我的成就</string>
+    <string name="my_books">我的书籍</string>
+    <string name="next">下一步</string>
+    <string name="offline_books">切换离线绘本</string>
+    <string name="offline_reading">没网也能读</string>
+    <string name="parent_dashboard_title">家长看板</string>
+    <string name="reading_list_title">阅读列表</string>
+    <string name="reading_progress">阅读进度</string>
+    <string name="recent">最近</string>
+    <string name="recommended">推荐</string>
+    <string name="recommended_books">为你推荐的书</string>
+    <string name="remote_reading">远程共读</string>
+    <string name="retry">重试</string>
+    <string name="rewards_title">奖励中心</string>
+    <string name="scan_book">扫绘本，让角色活起来</string>
+    <string name="scan_instruction">请对准绘本页面</string>
+    <string name="scan_title">绘本扫描</string>
+    <string name="star_count">32★</string>
+    <string name="time_control">时间控制</string>
+    <style name="Theme.StoryPal" parent="Theme.Material3.DayNight">
+        
+        <item name="colorPrimary">@color/sky_blue</item>
+        <item name="colorPrimaryVariant">@color/sky_blue_dark</item>
+        <item name="colorOnPrimary">@color/text_white_soft</item>
+        
+        <item name="colorSecondary">@color/warm_orange</item>
+        <item name="colorSecondaryVariant">@color/warm_orange_dark</item>
+        <item name="colorOnSecondary">@color/text_white_soft</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+        <item name="android:windowBackground">@color/background_fairy_tale</item>
+    </style>
+    <style name="Theme.StoryPal.Child" parent="Theme.StoryPal">
+        <item name="colorPrimary">@color/mint_green</item>
+        <item name="colorPrimaryVariant">@color/mint_green_dark</item>
+        <item name="android:windowBackground">@color/background_fairy_tale</item>
+    </style>
+    <style name="Theme.StoryPal.Parent" parent="Theme.StoryPal">
+        <item name="colorPrimary">@color/sky_blue</item>
+        <item name="colorPrimaryVariant">@color/sky_blue_dark</item>
+        <item name="android:windowBackground">@color/background_card_soft</item>
+    </style>
+</resources>

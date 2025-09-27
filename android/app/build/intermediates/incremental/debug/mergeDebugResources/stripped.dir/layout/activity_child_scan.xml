@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_fairy_tale"
+    tools:context=".ChildScanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 顶部标题栏 - 故事化设计 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:background="@drawable/card_children_rounded"
+            android:elevation="6dp"
+            android:layout_margin="12dp">
+
+            <!-- 返回按钮 - 小恐龙Palo挥手 -->
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👋 回去"
+                android:background="@drawable/button_children_primary"
+                android:textColor="@color/text_white_soft"
+                android:textSize="14sp"
+                android:padding="12dp" />
+
+            <!-- 标题 - 故事化 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Palo的魔法相机"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/sky_blue_dark"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light" />
+
+            <!-- 帮助按钮 - Palo歪头疑惑表情 -->
+            <Button
+                android:id="@+id/btnHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🤔 帮助"
+                android:background="@drawable/button_children_primary"
+                android:textColor="@color/text_white_soft"
+                android:textSize="14sp"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <!-- 扫描界面 - 降低紧张感 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <!-- 彩色虚线+卡通边框扫描框 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/scan_card_background"
+                    android:padding="20dp">
+
+                    <!-- 小恐龙Palo举着放大镜引导图 -->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp">
+
+                        <!-- 放大镜 -->
+                        <ImageView
+                            android:id="@+id/ivMagnifyingGlass"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_camera"
+                            android:contentDescription="放大镜"
+                            android:tint="@color/mint_green_light"
+                            android:layout_centerInParent="true" />
+
+                        <!-- 小恐龙Palo -->
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_dragon"
+                            android:contentDescription="小恐龙Palo"
+                            android:tint="@color/sky_blue"
+                            android:layout_alignBottom="@id/ivMagnifyingGlass"
+                            android:layout_alignStart="@id/ivMagnifyingGlass"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginStart="8dp" />
+
+                    </RelativeLayout>
+
+                    <!-- 彩色虚线边框 -->
+                    <View
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/scan_border"
+                        android:alpha="0.8" />
+
+                    <!-- 故事化引导文字 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="把绘本给Palo看看吧！"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_white_soft"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center" />
+
+                    <!-- 趣味提示 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📖 对准绘本页面，Palo就能看到故事啦"
+                        android:textSize="12sp"
+                        android:textColor="@color/mint_green_light"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- 扫描提示 - 更友好的语言 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✨ 轻轻翻开绘本，让Palo看看里面的故事"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary_soft"
+                android:layout_marginBottom="20dp"
+                android:gravity="center" />
+
+            <!-- 魔法扫描按钮 -->
+            <Button
+                android:id="@+id/btnScan"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/scan_button"
+                android:layout_marginBottom="24dp"
+                android:contentDescription="魔法扫描按钮" />
+
+            <!-- 鼓励文字 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎉 点击按钮，开始魔法扫描！"
+                android:textSize="14sp"
+                android:textColor="@color/sky_blue"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- 底部操作栏 - 故事化设计 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:background="@drawable/card_children_rounded"
+            android:elevation="6dp"
+            android:layout_margin="12dp">
+
+            <!-- 离线绘本 - 云朵带睡帽图标 -->
+            <Button
+                android:id="@+id/btnOfflineBooks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="☁️ 没网也能读的故事"
+                android:drawableStart="@drawable/ic_download"
+                android:drawablePadding="8dp"
+                android:background="@drawable/offline_card_background"
+                android:textColor="@color/text_white_soft"
+                android:textSize="14sp"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

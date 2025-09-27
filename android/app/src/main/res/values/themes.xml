@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme - 儿童友好版 -->
+    <style name="Theme.StoryPal" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color - 天空蓝 -->
+        <item name="colorPrimary">@color/sky_blue</item>
+        <item name="colorPrimaryVariant">@color/sky_blue_dark</item>
+        <item name="colorOnPrimary">@color/text_white_soft</item>
+        <!-- Secondary brand color - 暖橙 -->
+        <item name="colorSecondary">@color/warm_orange</item>
+        <item name="colorSecondaryVariant">@color/warm_orange_dark</item>
+        <item name="colorOnSecondary">@color/text_white_soft</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/background_fairy_tale</item>
+    </style>
+    
+    <!-- 儿童友好主题 -->
+    <style name="Theme.StoryPal.Child" parent="Theme.StoryPal">
+        <item name="colorPrimary">@color/mint_green</item>
+        <item name="colorPrimaryVariant">@color/mint_green_dark</item>
+        <item name="android:windowBackground">@color/background_fairy_tale</item>
+    </style>
+    
+    <!-- 家长端主题 -->
+    <style name="Theme.StoryPal.Parent" parent="Theme.StoryPal">
+        <item name="colorPrimary">@color/sky_blue</item>
+        <item name="colorPrimaryVariant">@color/sky_blue_dark</item>
+        <item name="android:windowBackground">@color/background_card_soft</item>
+    </style>
+</resources>
+
+

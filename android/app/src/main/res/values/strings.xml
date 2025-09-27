@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sanson StoryPal</string>
+    
+    <!-- 儿童端首页 -->
+    <string name="child_home_title">Sanson StoryPal</string>
+    <string name="scan_book">扫绘本，让角色活起来</string>
+    <string name="recommended_books">为你推荐的书</string>
+    <string name="daily_mission">今日闯关任务</string>
+    <string name="offline_reading">没网也能读</string>
+    <string name="find_parents">找爸爸妈妈</string>
+    <string name="eye_protection">护眼模式</string>
+    <string name="star_count">32★</string>
+    <string name="difficulty_pre_a1">Pre-A1</string>
+    <string name="cache_count">8本</string>
+    
+    <!-- 绘本扫描 -->
+    <string name="scan_title">绘本扫描</string>
+    <string name="scan_instruction">请对准绘本页面</string>
+    <string name="offline_books">切换离线绘本</string>
+    <string name="help">帮助</string>
+    
+    <!-- 阅读列表 -->
+    <string name="reading_list_title">阅读列表</string>
+    <string name="my_books">我的书籍</string>
+    <string name="recommended">推荐</string>
+    <string name="recent">最近</string>
+    
+    <!-- 奖励中心 -->
+    <string name="rewards_title">奖励中心</string>
+    <string name="my_achievements">我的成就</string>
+    <string name="daily_rewards">每日奖励</string>
+    <string name="level_progress">等级进度</string>
+    
+    <!-- 家长看板 -->
+    <string name="parent_dashboard_title">家长看板</string>
+    <string name="reading_progress">阅读进度</string>
+    <string name="time_control">时间控制</string>
+    <string name="remote_reading">远程共读</string>
+    <string name="device_settings">设备设置</string>
+    
+    <!-- 通用 -->
+    <string name="back">返回</string>
+    <string name="next">下一步</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="loading">加载中...</string>
+    <string name="error">错误</string>
+    <string name="retry">重试</string>
+</resources>

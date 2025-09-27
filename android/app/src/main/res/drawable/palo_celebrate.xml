@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- 小恐龙Palo - 庆祝状态 -->
+    
+    <!-- 身体 -->
+    <path
+        android:fillColor="@color/sky_blue"
+        android:pathData="M24,32 C20,32 16,28 16,24 C16,20 20,16 24,16 C28,16 32,20 32,24 C32,28 28,32 24,32 Z" />
+    
+    <!-- 头部 -->
+    <path
+        android:fillColor="@color/sky_blue_light"
+        android:pathData="M24,20 C18,20 14,16 14,12 C14,8 18,4 24,4 C30,4 34,8 34,12 C34,16 30,20 24,20 Z" />
+    
+    <!-- 眼睛 -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M20,8 A2,2 0 1,1 20,12 A2,2 0 1,1 20,8 Z" />
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M28,8 A2,2 0 1,1 28,12 A2,2 0 1,1 28,8 Z" />
+    
+    <!-- 眼珠 -->
+    <path
+        android:fillColor="@color/text_primary_soft"
+        android:pathData="M20,9 A1,1 0 1,1 20,11 A1,1 0 1,1 20,9 Z" />
+    <path
+        android:fillColor="@color/text_primary_soft"
+        android:pathData="M28,9 A1,1 0 1,1 28,11 A1,1 0 1,1 28,9 Z" />
+    
+    <!-- 嘴巴 - 大笑 -->
+    <path
+        android:fillColor="@color/rainbow_red"
+        android:pathData="M18,14 Q24,20 30,14"
+        android:strokeWidth="2"
+        android:strokeColor="@color/rainbow_red" />
+    
+    <!-- 小角 -->
+    <path
+        android:fillColor="@color/sky_blue_dark"
+        android:pathData="M22,6 L24,2 L26,6 Z" />
+    
+    <!-- 庆祝的星星 -->
+    <path
+        android:fillColor="@color/rainbow_yellow"
+        android:pathData="M8,8 L10,12 L14,12 L11,15 L12,19 L8,17 L4,19 L5,15 L2,12 L6,12 Z" />
+    
+    <path
+        android:fillColor="@color/rainbow_yellow"
+        android:pathData="M40,6 L41,9 L44,9 L42,11 L43,14 L40,12 L37,14 L38,11 L36,9 L39,9 Z" />
+    
+    <!-- 举起的小爪子 -->
+    <path
+        android:fillColor="@color/sky_blue_light"
+        android:pathData="M16,20 L20,16 L24,20 L20,24 Z" />
+    <path
+        android:fillColor="@color/sky_blue_light"
+        android:pathData="M32,20 L36,16 L40,20 L36,24 Z" />
+    
+</vector>

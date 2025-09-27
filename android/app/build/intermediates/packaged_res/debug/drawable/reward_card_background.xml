@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    
+    <!-- 奖励模块专属粉红背景 -->
+    <corners android:radius="16dp" />
+    <solid android:color="@color/reward_card" />
+    
+    <!-- 渐变效果 -->
+    <gradient
+        android:angle="135"
+        android:startColor="@color/pink_light"
+        android:endColor="@color/pink_dark"
+        android:type="linear" />
+    
+    <!-- 轻微边框 -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/pink_light" />
+    
+</shape>
