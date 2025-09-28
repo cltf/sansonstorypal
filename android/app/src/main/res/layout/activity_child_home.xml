@@ -30,7 +30,7 @@
                 android:layout_height="64dp"
                 android:src="@drawable/img_0"
                 android:contentDescription="三生儿童绘本吉祥物"
-                android:background="@drawable/button_children_primary"
+                android:background="@drawable/circle_children_primary"
                 android:scaleType="centerCrop"
                 android:padding="0dp" />
 
