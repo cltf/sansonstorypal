@@ -146,7 +146,7 @@
                                 <ImageView
                                     android:layout_width="60dp"
                                     android:layout_height="60dp"
-                                    android:src="@drawable/img_1"
+                                    android:src="@drawable/img_5"
                                     android:contentDescription="绘本扫描"
                                     android:scaleType="centerCrop" />
 
