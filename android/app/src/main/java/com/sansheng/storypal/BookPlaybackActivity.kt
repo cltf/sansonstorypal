@@ -80,6 +80,7 @@ class BookPlaybackActivity : AppCompatActivity() {
         }
         
         playPauseButton.setOnClickListener {
+            Toast.makeText(this, "播放按钮被点击", Toast.LENGTH_SHORT).show()
             togglePlayPause()
         }
         
@@ -109,8 +110,9 @@ class BookPlaybackActivity : AppCompatActivity() {
                 stopProgressUpdate()
             }
             updateTotalTime()
+            Toast.makeText(this, "音频播放器初始化成功", Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
-            Toast.makeText(this, "音频播放器初始化失败", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "音频播放器初始化失败: ${e.message}", Toast.LENGTH_SHORT).show()
         }
     }
     
@@ -123,22 +125,26 @@ class BookPlaybackActivity : AppCompatActivity() {
     }
     
     private fun startPlayback() {
-        if (::mediaPlayer.isInitialized) {
+        try {
             // 模拟播放开始
             isPlaying = true
             updatePlayPauseButton()
             startProgressUpdate()
             Toast.makeText(this, "开始播放绘本音频", Toast.LENGTH_SHORT).show()
+        } catch (e: Exception) {
+            Toast.makeText(this, "播放失败: ${e.message}", Toast.LENGTH_SHORT).show()
         }
     }
     
     private fun pausePlayback() {
-        if (::mediaPlayer.isInitialized) {
+        try {
             // 模拟暂停播放
             isPlaying = false
             updatePlayPauseButton()
             stopProgressUpdate()
             Toast.makeText(this, "暂停播放", Toast.LENGTH_SHORT).show()
+        } catch (e: Exception) {
+            Toast.makeText(this, "暂停失败: ${e.message}", Toast.LENGTH_SHORT).show()
         }
     }
     
@@ -170,11 +176,13 @@ class BookPlaybackActivity : AppCompatActivity() {
     }
     
     private fun resetPlayback() {
-        if (::mediaPlayer.isInitialized) {
+        try {
             // 模拟重置播放位置
             if (isPlaying) {
                 Toast.makeText(this, "重新播放当前页", Toast.LENGTH_SHORT).show()
             }
+        } catch (e: Exception) {
+            Toast.makeText(this, "重置失败: ${e.message}", Toast.LENGTH_SHORT).show()
         }
     }
     
@@ -186,16 +194,18 @@ class BookPlaybackActivity : AppCompatActivity() {
     }
     
     private fun changePlaybackSpeed() {
-        if (::mediaPlayer.isInitialized) {
+        try {
             // 模拟播放速度切换
             Toast.makeText(this, "切换播放速度", Toast.LENGTH_SHORT).show()
+        } catch (e: Exception) {
+            Toast.makeText(this, "速度切换失败: ${e.message}", Toast.LENGTH_SHORT).show()
         }
     }
     
     private fun startProgressUpdate() {
         progressRunnable = object : Runnable {
             override fun run() {
-                if (::mediaPlayer.isInitialized && isPlaying) {
+                if (isPlaying) {
                     // 模拟进度更新
                     val currentPosition = 0 // 模拟当前位置
                     val duration = 225000 // 3分45秒 = 225秒 = 225000毫秒
@@ -215,9 +225,11 @@ class BookPlaybackActivity : AppCompatActivity() {
     }
     
     private fun updateTotalTime() {
-        if (::mediaPlayer.isInitialized) {
+        try {
             // 设置模拟的总时长（3分45秒）
             totalTimeText.text = formatTime(225000)
+        } catch (e: Exception) {
+            Toast.makeText(this, "设置总时长失败: ${e.message}", Toast.LENGTH_SHORT).show()
         }
     }
     
