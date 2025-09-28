@@ -31,7 +31,8 @@
                 android:src="@drawable/img_0"
                 android:contentDescription="三生儿童绘本吉祥物"
                 android:background="@drawable/button_children_primary"
-                android:padding="8dp" />
+                android:scaleType="centerCrop"
+                android:padding="0dp" />
 
             <!-- StoryPal品牌标题 -->
             <LinearLayout
@@ -44,7 +45,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="三生儿童绘本"
+                    android:text="Hi! Palo."
                     android:textSize="28sp"
                     android:textStyle="bold"
                     android:textColor="@color/sky_blue_dark"
