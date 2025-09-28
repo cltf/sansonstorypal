@@ -36,7 +36,7 @@
 21-->[androidx.core:core:1.12.0] /Users/chenlei/.gradle/caches/transforms-3/76a6da438bb2575f840289c110adfe9d/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 22
 23    <application
-23-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:11:5-63:19
+23-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:11:5-69:19
 24        android:allowBackup="true"
 24-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:12:9-35
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -55,159 +55,168 @@
 32-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:17:9-54
 33        android:supportsRtl="true"
 33-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:18:9-35
-34        android:testOnly="true"
-35        android:theme="@style/Theme.StoryPal" >
-35-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:19:9-46
-36        <activity
-36-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:22:9-31:20
-37            android:name="com.sansheng.storypal.MainActivity"
-37-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:23:13-41
-38            android:exported="true"
-38-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:24:13-36
-39            android:screenOrientation="portrait"
-39-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:25:13-49
-40            android:theme="@style/Theme.StoryPal" >
-40-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:26:13-50
-41            <intent-filter>
-41-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:27:13-30:29
-42                <action android:name="android.intent.action.MAIN" />
-42-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:28:17-69
-42-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:28:25-66
-43
-44                <category android:name="android.intent.category.LAUNCHER" />
-44-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:29:17-77
-44-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:29:27-74
-45            </intent-filter>
-46        </activity>
-47        <activity
-47-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:33:9-37:53
-48            android:name="com.sansheng.storypal.ChildHomeActivity"
-48-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:34:13-46
-49            android:exported="false"
-49-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:35:13-37
-50            android:screenOrientation="portrait"
-50-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:36:13-49
-51            android:theme="@style/Theme.StoryPal" />
-51-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:37:13-50
-52        <activity
-52-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:39:9-43:53
-53            android:name="com.sansheng.storypal.ChildScanActivity"
-53-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:40:13-46
-54            android:exported="false"
-54-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:41:13-37
-55            android:screenOrientation="portrait"
-55-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:42:13-49
-56            android:theme="@style/Theme.StoryPal" />
-56-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:43:13-50
-57        <activity
-57-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:45:9-49:53
-58            android:name="com.sansheng.storypal.ChildReadingActivity"
-58-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:46:13-49
-59            android:exported="false"
-59-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:47:13-37
-60            android:screenOrientation="portrait"
-60-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:48:13-49
-61            android:theme="@style/Theme.StoryPal" />
-61-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:49:13-50
-62        <activity
-62-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:51:9-55:53
-63            android:name="com.sansheng.storypal.ChildRewardsActivity"
-63-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:52:13-49
-64            android:exported="false"
-64-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:53:13-37
-65            android:screenOrientation="portrait"
-65-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:54:13-49
-66            android:theme="@style/Theme.StoryPal" />
-66-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:55:13-50
-67        <activity
-67-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:57:9-61:53
-68            android:name="com.sansheng.storypal.ParentDashboardActivity"
-68-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:58:13-52
-69            android:exported="false"
-69-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:59:13-37
-70            android:screenOrientation="portrait"
-70-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:60:13-49
-71            android:theme="@style/Theme.StoryPal" />
-71-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:61:13-50
-72
-73        <provider
-73-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-74            android:name="androidx.startup.InitializationProvider"
-74-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-75            android:authorities="com.sansheng.storypal.androidx-startup"
-75-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-76            android:exported="false" >
-76-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-77            <meta-data
-77-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-78                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-78-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-79                android:value="androidx.startup" />
-79-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-80            <meta-data
-80-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
-81                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-81-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
-82                android:value="androidx.startup" />
-82-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
-83            <meta-data
-83-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-84                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-85                android:value="androidx.startup" />
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-86        </provider>
-87
-88        <uses-library
-88-->[androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
-89            android:name="androidx.window.extensions"
-89-->[androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
-90            android:required="false" />
-90-->[androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
-91        <uses-library
-91-->[androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
-92            android:name="androidx.window.sidecar"
-92-->[androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
-93            android:required="false" />
-93-->[androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
-94
-95        <receiver
-95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-96            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-96-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-97            android:directBootAware="false"
-97-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-98            android:enabled="true"
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-99            android:exported="true"
-99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-100            android:permission="android.permission.DUMP" >
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-101            <intent-filter>
-101-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-102                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-102-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-102-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-103            </intent-filter>
-104            <intent-filter>
-104-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-105                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-105-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-105-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-106            </intent-filter>
-107            <intent-filter>
-107-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-108                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-108-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-108-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-109            </intent-filter>
-110            <intent-filter>
-110-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-111                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-111-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-111-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-112            </intent-filter>
-113        </receiver>
-114    </application>
-115
-116</manifest>
+34        android:theme="@style/Theme.StoryPal" >
+34-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:19:9-46
+35        <activity
+35-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:22:9-31:20
+36            android:name="com.sansheng.storypal.MainActivity"
+36-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:23:13-41
+37            android:exported="true"
+37-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:24:13-36
+38            android:screenOrientation="portrait"
+38-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:25:13-49
+39            android:theme="@style/Theme.StoryPal" >
+39-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:26:13-50
+40            <intent-filter>
+40-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:27:13-30:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:28:17-69
+41-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:28:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:29:17-77
+43-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:29:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:33:9-37:53
+47            android:name="com.sansheng.storypal.ChildHomeActivity"
+47-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:34:13-46
+48            android:exported="false"
+48-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:35:13-37
+49            android:screenOrientation="portrait"
+49-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:36:13-49
+50            android:theme="@style/Theme.StoryPal" />
+50-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:37:13-50
+51        <activity
+51-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:39:9-43:53
+52            android:name="com.sansheng.storypal.ChildScanActivity"
+52-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:40:13-46
+53            android:exported="false"
+53-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:41:13-37
+54            android:screenOrientation="portrait"
+54-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:42:13-49
+55            android:theme="@style/Theme.StoryPal" />
+55-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:43:13-50
+56        <activity
+56-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:45:9-49:53
+57            android:name="com.sansheng.storypal.ChildReadingActivity"
+57-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:46:13-49
+58            android:exported="false"
+58-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:47:13-37
+59            android:screenOrientation="portrait"
+59-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:48:13-49
+60            android:theme="@style/Theme.StoryPal" />
+60-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:49:13-50
+61        <activity
+61-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:51:9-55:53
+62            android:name="com.sansheng.storypal.ChildRewardsActivity"
+62-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:52:13-49
+63            android:exported="false"
+63-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:53:13-37
+64            android:screenOrientation="portrait"
+64-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:54:13-49
+65            android:theme="@style/Theme.StoryPal" />
+65-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:55:13-50
+66        <activity
+66-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:57:9-61:53
+67            android:name="com.sansheng.storypal.ParentDashboardActivity"
+67-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:58:13-52
+68            android:exported="false"
+68-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:59:13-37
+69            android:screenOrientation="portrait"
+69-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:60:13-49
+70            android:theme="@style/Theme.StoryPal" />
+70-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:61:13-50
+71        <activity
+71-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:63:9-67:53
+72            android:name="com.sansheng.storypal.BookPlaybackActivity"
+72-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:64:13-49
+73            android:exported="false"
+73-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:65:13-37
+74            android:screenOrientation="portrait"
+74-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:66:13-49
+75            android:theme="@style/Theme.StoryPal" />
+75-->/Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:67:13-50
+76
+77        <provider
+77-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+78            android:name="androidx.startup.InitializationProvider"
+78-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+79            android:authorities="com.sansheng.storypal.androidx-startup"
+79-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+80            android:exported="false" >
+80-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+81            <meta-data
+81-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+82                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+82-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+83                android:value="androidx.startup" />
+83-->[androidx.emoji2:emoji2:1.2.0] /Users/chenlei/.gradle/caches/transforms-3/fb5ab30ee769a68d046d2bdff9b494dd/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+84            <meta-data
+84-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+85-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+86                android:value="androidx.startup" />
+86-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/chenlei/.gradle/caches/transforms-3/7e60a6254814e0be8922d2e6d74475a5/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+87            <meta-data
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+89                android:value="androidx.startup" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+90        </provider>
+91
+92        <uses-library
+92-->[androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+93            android:name="androidx.window.extensions"
+93-->[androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+94            android:required="false" />
+94-->[androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+95        <uses-library
+95-->[androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+96            android:name="androidx.window.sidecar"
+96-->[androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+97            android:required="false" />
+97-->[androidx.window:window:1.0.0] /Users/chenlei/.gradle/caches/transforms-3/539ef9fbd961106d109897e69caf0001/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+98
+99        <receiver
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+100            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+101            android:directBootAware="false"
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+102            android:enabled="true"
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+103            android:exported="true"
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+104            android:permission="android.permission.DUMP" >
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+105            <intent-filter>
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+106                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+107            </intent-filter>
+108            <intent-filter>
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+109                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+110            </intent-filter>
+111            <intent-filter>
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+112                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+113            </intent-filter>
+114            <intent-filter>
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+115                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/chenlei/.gradle/caches/transforms-3/2921a7ae2bfe331dac6d6f5002dc718e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+116            </intent-filter>
+117        </receiver>
+118    </application>
+119
+120</manifest>

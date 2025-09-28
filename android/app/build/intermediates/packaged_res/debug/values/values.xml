@@ -43,11 +43,11 @@
     <color name="warm_orange_light">#FFFFB74D</color>
     <color name="warning_soft">#FFFFB74D</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_name">Sanson StoryPal</string>
+    <string name="app_name">三生儿童绘本</string>
     <string name="back">返回</string>
     <string name="cache_count">8本</string>
     <string name="cancel">取消</string>
-    <string name="child_home_title">Sanson StoryPal</string>
+    <string name="child_home_title">三生儿童绘本</string>
     <string name="confirm">确认</string>
     <string name="daily_mission">今日闯关任务</string>
     <string name="daily_rewards">每日奖励</string>

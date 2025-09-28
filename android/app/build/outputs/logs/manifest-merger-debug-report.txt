@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:2:1-65:12
-INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:2:1-65:12
-INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:2:1-65:12
-INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:2:1-65:12
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:2:1-71:12
 MERGED from [androidx.databinding:viewbinding:8.2.2] /Users/chenlei/.gradle/caches/transforms-3/b9a7865eaade1426fa04e0f22a526630/transformed/viewbinding-8.2.2/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/594492f65664a52b9484ff7f5c6ecf2e/transformed/navigation-common-2.7.5/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] /Users/chenlei/.gradle/caches/transforms-3/8b09b291dfc863af0f4109271e313e9e/transformed/navigation-common-ktx-2.7.5/AndroidManifest.xml:2:1-7:12
@@ -98,8 +98,8 @@ ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.
 	android:name
 		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:9:22-76
 application
-ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:11:5-63:19
-INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:11:5-63:19
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:11:5-69:19
+INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:11:5-69:19
 MERGED from [com.google.android.material:material:1.10.0] /Users/chenlei/.gradle/caches/transforms-3/9f428374d3475d1b0ef157f3a2682ea4/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] /Users/chenlei/.gradle/caches/transforms-3/9f428374d3475d1b0ef157f3a2682ea4/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/chenlei/.gradle/caches/transforms-3/1de4143911f038f074128cdaae9e11c4/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -210,6 +210,16 @@ ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.
 		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:61:13-50
 	android:name
 		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:58:13-52
+activity#com.sansheng.storypal.BookPlaybackActivity
+ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:63:9-67:53
+	android:screenOrientation
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:66:13-49
+	android:exported
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:65:13-37
+	android:theme
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:67:13-50
+	android:name
+		ADDED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml:64:13-49
 uses-sdk
 INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/chenlei/Desktop/storypal/android/app/src/main/AndroidManifest.xml

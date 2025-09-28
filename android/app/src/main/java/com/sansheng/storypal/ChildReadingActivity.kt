@@ -1,5 +1,6 @@
 package com.sansheng.storypal
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -16,16 +17,26 @@ class ChildReadingActivity : AppCompatActivity() {
     
     private fun setupClickListeners() {
         findViewById<Button>(R.id.btnAge3to6).setOnClickListener {
-            showToast("3-6岁绘本功能开发中...")
+            startBookPlayback("3-6岁绘本")
         }
         
         findViewById<Button>(R.id.btnAge7to9).setOnClickListener {
-            showToast("7-9岁绘本功能开发中...")
+            startBookPlayback("7-9岁绘本")
         }
         
         findViewById<Button>(R.id.btnAge10to12).setOnClickListener {
-            showToast("10-12岁绘本功能开发中...")
+            startBookPlayback("10-12岁绘本")
         }
+        
+        findViewById<Button>(R.id.btnBack).setOnClickListener {
+            finish()
+        }
+    }
+    
+    private fun startBookPlayback(bookCategory: String) {
+        val intent = Intent(this, BookPlaybackActivity::class.java)
+        intent.putExtra("book_category", bookCategory)
+        startActivity(intent)
     }
     
     private fun showToast(message: String) {

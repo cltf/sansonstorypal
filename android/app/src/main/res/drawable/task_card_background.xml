@@ -2,20 +2,20 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     
-    <!-- 任务模块统一天空蓝背景 -->
+    <!-- 任务模块专属暖橙背景 -->
     <corners android:radius="16dp" />
-    <solid android:color="@color/reading_card" />
+    <solid android:color="@color/task_card" />
     
     <!-- 渐变效果 -->
     <gradient
         android:angle="135"
-        android:startColor="@color/sky_blue_light"
-        android:endColor="@color/sky_blue_dark"
+        android:startColor="@color/warm_orange_light"
+        android:endColor="@color/warm_orange_dark"
         android:type="linear" />
     
     <!-- 轻微边框 -->
     <stroke
         android:width="2dp"
-        android:color="@color/sky_blue_light" />
+        android:color="@color/warm_orange_light" />
     
 </shape>

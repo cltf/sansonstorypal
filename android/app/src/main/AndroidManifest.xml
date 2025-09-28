@@ -60,6 +60,12 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.StoryPal" />
             
+        <activity
+            android:name=".BookPlaybackActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.StoryPal" />
+            
     </application>
 
 </manifest>

@@ -31,7 +31,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.StoryPal" >
         <activity
             android:name="com.sansheng.storypal.MainActivity"
@@ -66,6 +65,11 @@
             android:theme="@style/Theme.StoryPal" />
         <activity
             android:name="com.sansheng.storypal.ParentDashboardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.StoryPal" />
+        <activity
+            android:name="com.sansheng.storypal.BookPlaybackActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.StoryPal" />
