@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -33,6 +34,12 @@ public final class ActivityChildReadingBinding implements ViewBinding {
   public final Button btnBack;
 
   @NonNull
+  public final CardView cardLittlePrince;
+
+  @NonNull
+  public final CardView cardThreePigs;
+
+  @NonNull
   public final ImageView ivBookCover;
 
   @NonNull
@@ -40,12 +47,15 @@ public final class ActivityChildReadingBinding implements ViewBinding {
 
   private ActivityChildReadingBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button btnAge10to12, @NonNull Button btnAge3to6, @NonNull Button btnAge7to9,
-      @NonNull Button btnBack, @NonNull ImageView ivBookCover, @NonNull ImageView ivBookCover2) {
+      @NonNull Button btnBack, @NonNull CardView cardLittlePrince, @NonNull CardView cardThreePigs,
+      @NonNull ImageView ivBookCover, @NonNull ImageView ivBookCover2) {
     this.rootView = rootView;
     this.btnAge10to12 = btnAge10to12;
     this.btnAge3to6 = btnAge3to6;
     this.btnAge7to9 = btnAge7to9;
     this.btnBack = btnBack;
+    this.cardLittlePrince = cardLittlePrince;
+    this.cardThreePigs = cardThreePigs;
     this.ivBookCover = ivBookCover;
     this.ivBookCover2 = ivBookCover2;
   }
@@ -101,6 +111,18 @@ public final class ActivityChildReadingBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cardLittlePrince;
+      CardView cardLittlePrince = ViewBindings.findChildViewById(rootView, id);
+      if (cardLittlePrince == null) {
+        break missingId;
+      }
+
+      id = R.id.cardThreePigs;
+      CardView cardThreePigs = ViewBindings.findChildViewById(rootView, id);
+      if (cardThreePigs == null) {
+        break missingId;
+      }
+
       id = R.id.ivBookCover;
       ImageView ivBookCover = ViewBindings.findChildViewById(rootView, id);
       if (ivBookCover == null) {
@@ -114,7 +136,7 @@ public final class ActivityChildReadingBinding implements ViewBinding {
       }
 
       return new ActivityChildReadingBinding((ConstraintLayout) rootView, btnAge10to12, btnAge3to6,
-          btnAge7to9, btnBack, ivBookCover, ivBookCover2);
+          btnAge7to9, btnBack, cardLittlePrince, cardThreePigs, ivBookCover, ivBookCover2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

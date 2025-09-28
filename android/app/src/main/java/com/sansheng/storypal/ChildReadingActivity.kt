@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 
 class ChildReadingActivity : AppCompatActivity() {
     
@@ -30,6 +31,17 @@ class ChildReadingActivity : AppCompatActivity() {
         
         findViewById<Button>(R.id.btnBack).setOnClickListener {
             finish()
+        }
+        
+        // 绘本卡片点击事件
+        findViewById<CardView>(R.id.cardLittlePrince).setOnClickListener {
+            Toast.makeText(this, "点击了小王子绘本", Toast.LENGTH_SHORT).show()
+            startBookPlayback("小王子")
+        }
+        
+        findViewById<CardView>(R.id.cardThreePigs).setOnClickListener {
+            Toast.makeText(this, "点击了三只小猪绘本", Toast.LENGTH_SHORT).show()
+            startBookPlayback("三只小猪")
         }
     }
     

@@ -24,12 +24,12 @@
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/anim/star_fly.xml"
     },
     {
-        "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_palo_wave.xml.flat",
-        "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/palo_wave.xml"
-    },
-    {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_img_4.png.flat",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/img_4.png"
+    },
+    {
+        "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_palo_wave.xml.flat",
+        "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/palo_wave.xml"
     },
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_ic_users.xml.flat",
@@ -50,10 +50,6 @@
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_circle_red.xml.flat",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/circle_red.xml"
-    },
-    {
-        "merged": "com.sansheng.storypal.app-merged_res-50:/layout_activity_book_playback.xml.flat",
-        "source": "com.sansheng.storypal.app-main-52:/layout/activity_book_playback.xml"
     },
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_ic_book.xml.flat",
@@ -174,6 +170,10 @@
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/layout_activity_child_reading.xml.flat",
+        "source": "com.sansheng.storypal.app-main-52:/layout/activity_child_reading.xml"
     },
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_ic_speed.xml.flat",

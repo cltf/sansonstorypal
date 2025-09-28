@@ -120,10 +120,12 @@ id btnRepeat
 id btnScan
 id btnSpeed
 id btnTimeControl
+id cardLittlePrince
 id cardOffline
 id cardReading
 id cardScan
 id cardTask
+id cardThreePigs
 id ivBookCover
 id ivBookCover2
 id ivMagnifyingGlass

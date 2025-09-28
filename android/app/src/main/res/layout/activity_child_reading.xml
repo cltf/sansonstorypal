@@ -112,6 +112,7 @@
 
                 <!-- 示例书籍卡片 - 微立体浮雕效果 -->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLittlePrince"
                     android:layout_width="match_parent"
                     android:layout_height="140dp"
                     app:cardCornerRadius="16dp"
@@ -227,6 +228,7 @@
 
                 <!-- 第二本书 - 三只小猪 -->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardThreePigs"
                     android:layout_width="match_parent"
                     android:layout_height="140dp"
                     app:cardCornerRadius="16dp"

@@ -3315,10 +3315,12 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id cardLittlePrince
 id cardOffline
 id cardReading
 id cardScan
 id cardTask
+id cardThreePigs
 id carryVelocity
 id center
 id centerCrop
