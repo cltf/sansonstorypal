@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Sanson StoryPal</string>
+    <string name="app_name">三生儿童绘本</string>
     
     <!-- 儿童端首页 -->
-    <string name="child_home_title">Sanson StoryPal</string>
+    <string name="child_home_title">三生儿童绘本</string>
     <string name="scan_book">扫绘本，让角色活起来</string>
     <string name="recommended_books">为你推荐的书</string>
     <string name="daily_mission">今日闯关任务</string>
