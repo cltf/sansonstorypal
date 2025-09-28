@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_button_secondary.xml.flat",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/button_secondary.xml"
     },
@@ -24,12 +28,16 @@
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/anim/star_fly.xml"
     },
     {
+        "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_palo_wave.xml.flat",
+        "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/palo_wave.xml"
+    },
+    {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_img_4.png.flat",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/img_4.png"
     },
     {
-        "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_palo_wave.xml.flat",
-        "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/palo_wave.xml"
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_ic_users.xml.flat",
@@ -50,6 +58,14 @@
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_circle_red.xml.flat",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/circle_red.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_ic_book.xml.flat",
@@ -86,6 +102,10 @@
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_ic_play.xml.flat",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/ic_play.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/layout_activity_parent_dashboard.xml.flat",
@@ -126,6 +146,10 @@
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_ic_trophy.xml.flat",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/ic_trophy.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-hdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_ic_star.xml.flat",
@@ -172,10 +196,6 @@
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.sansheng.storypal.app-merged_res-50:/layout_activity_child_reading.xml.flat",
-        "source": "com.sansheng.storypal.app-main-52:/layout/activity_child_reading.xml"
-    },
-    {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_ic_speed.xml.flat",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/ic_speed.xml"
     },
@@ -190,6 +210,10 @@
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_img_1.png.flat",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/img_1.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -218,6 +242,10 @@
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_img_3.png.flat",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/img_3.png"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_offline_card_background.xml.flat",
@@ -252,12 +280,20 @@
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_ic_next.xml.flat",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/drawable/ic_next.xml"
+    },
+    {
+        "merged": "com.sansheng.storypal.app-merged_res-50:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.sansheng.storypal.app-main-52:/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-merged_res-50:/drawable_palo_happy.xml.flat",
