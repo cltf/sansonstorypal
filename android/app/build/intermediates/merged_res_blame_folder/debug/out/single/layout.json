@@ -8,6 +8,10 @@
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/layout/activity_child_home.xml"
     },
     {
+        "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-mergeDebugResources-49:/layout/activity_book_playback.xml",
+        "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/layout/activity_book_playback.xml"
+    },
+    {
         "merged": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-mergeDebugResources-49:/layout/activity_main.xml",
         "source": "/Users/chenlei/.gradle/daemon/8.5/com.sansheng.storypal.app-main-52:/layout/activity_main.xml"
     },

@@ -68,32 +68,48 @@ class BookPlaybackActivity : AppCompatActivity() {
     
     private fun setupClickListeners() {
         try {
+            // 添加调试信息
+            Toast.makeText(this, "开始设置点击事件", Toast.LENGTH_SHORT).show()
+            
             findViewById<Button>(R.id.btnBack).setOnClickListener {
+                Toast.makeText(this, "返回按钮被点击", Toast.LENGTH_SHORT).show()
                 finish()
             }
             
             findViewById<ImageButton>(R.id.btnPreviousPage).setOnClickListener {
+                Toast.makeText(this, "上一页按钮被点击", Toast.LENGTH_SHORT).show()
                 previousPage()
             }
             
             findViewById<ImageButton>(R.id.btnNextPage).setOnClickListener {
+                Toast.makeText(this, "下一页按钮被点击", Toast.LENGTH_SHORT).show()
                 nextPage()
             }
             
+            // 检查播放按钮是否为空
+            if (playPauseButton == null) {
+                Toast.makeText(this, "播放按钮为空！", Toast.LENGTH_LONG).show()
+                return
+            }
+            
             playPauseButton.setOnClickListener {
-                Toast.makeText(this, "播放按钮被点击", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "播放按钮被点击了！", Toast.LENGTH_LONG).show()
                 togglePlayPause()
             }
             
             findViewById<ImageButton>(R.id.btnRepeat).setOnClickListener {
+                Toast.makeText(this, "重复按钮被点击", Toast.LENGTH_SHORT).show()
                 repeatCurrentPage()
             }
             
             findViewById<ImageButton>(R.id.btnSpeed).setOnClickListener {
+                Toast.makeText(this, "速度按钮被点击", Toast.LENGTH_SHORT).show()
                 changePlaybackSpeed()
             }
+            
+            Toast.makeText(this, "点击事件设置完成", Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
-            Toast.makeText(this, "设置点击事件失败: ${e.message}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "设置点击事件失败: ${e.message}", Toast.LENGTH_LONG).show()
         }
     }
     
