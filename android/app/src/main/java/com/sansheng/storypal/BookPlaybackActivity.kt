@@ -26,6 +26,11 @@ class BookPlaybackActivity : AppCompatActivity() {
     private val handler = Handler(Looper.getMainLooper())
     private var progressRunnable: Runnable? = null
     
+    // 模拟播放进度
+    private var currentPosition = 0
+    private val totalDuration = 225000 // 3分45秒
+    private var playbackSpeed = 1.0f
+    
     // 示例绘本数据
     private val bookData = BookData(
         title = "小王子",
@@ -197,6 +202,9 @@ class BookPlaybackActivity : AppCompatActivity() {
     private fun resetPlayback() {
         try {
             // 模拟重置播放位置
+            currentPosition = 0
+            progressBar.progress = 0
+            currentTimeText.text = formatTime(0)
             if (isPlaying) {
                 Toast.makeText(this, "重新播放当前页", Toast.LENGTH_SHORT).show()
             }
@@ -215,7 +223,9 @@ class BookPlaybackActivity : AppCompatActivity() {
     private fun changePlaybackSpeed() {
         try {
             // 模拟播放速度切换
-            Toast.makeText(this, "切换播放速度", Toast.LENGTH_SHORT).show()
+            playbackSpeed = if (playbackSpeed == 1.0f) 0.5f else 1.0f
+            val speedText = if (playbackSpeed == 0.5f) "慢速" else "正常"
+            Toast.makeText(this, "播放速度: $speedText", Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
             Toast.makeText(this, "速度切换失败: ${e.message}", Toast.LENGTH_SHORT).show()
         }
@@ -226,10 +236,19 @@ class BookPlaybackActivity : AppCompatActivity() {
             override fun run() {
                 if (isPlaying) {
                     // 模拟进度更新
-                    val currentPosition = 0 // 模拟当前位置
-                    val duration = 225000 // 3分45秒 = 225秒 = 225000毫秒
+                    currentPosition += (1000 * playbackSpeed).toInt()
                     
-                    progressBar.progress = (currentPosition * 100 / duration)
+                    if (currentPosition >= totalDuration) {
+                        // 播放完成
+                        currentPosition = totalDuration
+                        isPlaying = false
+                        updatePlayPauseButton()
+                        stopProgressUpdate()
+                        Toast.makeText(this@BookPlaybackActivity, "播放完成", Toast.LENGTH_SHORT).show()
+                    }
+                    
+                    // 更新进度条和时间显示
+                    progressBar.progress = (currentPosition * 100 / totalDuration)
                     currentTimeText.text = formatTime(currentPosition)
                     
                     handler.postDelayed(this, 1000)
@@ -246,7 +265,7 @@ class BookPlaybackActivity : AppCompatActivity() {
     private fun updateTotalTime() {
         try {
             // 设置模拟的总时长（3分45秒）
-            totalTimeText.text = formatTime(225000)
+            totalTimeText.text = formatTime(totalDuration)
         } catch (e: Exception) {
             Toast.makeText(this, "设置总时长失败: ${e.message}", Toast.LENGTH_SHORT).show()
         }
