@@ -28,7 +28,7 @@
                 android:id="@+id/ivPaloMascot"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:src="@drawable/img_storypal"
+                android:src="@drawable/img_0"
                 android:contentDescription="StoryPal吉祥物"
                 android:background="@drawable/button_children_primary"
                 android:padding="8dp" />
@@ -145,7 +145,7 @@
                                 <ImageView
                                     android:layout_width="60dp"
                                     android:layout_height="60dp"
-                                    android:src="@drawable/img_scan"
+                                    android:src="@drawable/img_1"
                                     android:contentDescription="绘本扫描"
                                     android:scaleType="centerCrop" />
 
@@ -189,7 +189,7 @@
                                 <ImageView
                                     android:layout_width="60dp"
                                     android:layout_height="60dp"
-                                    android:src="@drawable/img_reading"
+                                    android:src="@drawable/img_2"
                                     android:contentDescription="推荐阅读"
                                     android:scaleType="centerCrop" />
 
@@ -242,7 +242,7 @@
                                 <ImageView
                                     android:layout_width="60dp"
                                     android:layout_height="60dp"
-                                    android:src="@drawable/img_task"
+                                    android:src="@drawable/img_3"
                                     android:contentDescription="今日任务"
                                     android:scaleType="centerCrop" />
 
@@ -286,7 +286,7 @@
                                 <ImageView
                                     android:layout_width="60dp"
                                     android:layout_height="60dp"
-                                    android:src="@drawable/img_offline"
+                                    android:src="@drawable/img_4"
                                     android:contentDescription="离线阅读"
                                     android:scaleType="centerCrop" />
 
