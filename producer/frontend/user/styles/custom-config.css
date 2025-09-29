@@ -1,0 +1,563 @@
+/* 自定义配置页面专用样式 */
+
+/* 配置容器 */
+.config-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    margin-bottom: 100px;
+}
+
+/* 配置区域 */
+.config-section {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #F1F3F4;
+}
+
+/* 配置网格 */
+.config-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.config-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.config-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2C3E50;
+}
+
+.config-input,
+.config-select {
+    padding: 12px 16px;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #2C3E50;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.config-input:focus,
+.config-select:focus {
+    outline: none;
+    border-color: #4A90E2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.input-hint {
+    font-size: 12px;
+    color: #95A5A6;
+}
+
+/* 单选按钮组 */
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.radio-item input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #4A90E2;
+}
+
+.radio-label {
+    font-size: 14px;
+    color: #2C3E50;
+}
+
+/* 自定义主题输入 */
+.custom-theme-input {
+    margin-top: 12px;
+}
+
+/* 画风选择 */
+.style-options {
+    display: flex;
+    gap: 16px;
+}
+
+.style-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 12px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.style-option:hover {
+    border-color: #E9ECEF;
+}
+
+.style-option input[type="radio"]:checked + .style-preview {
+    border-color: #4A90E2;
+}
+
+.style-option input[type="radio"]:checked ~ .style-name {
+    color: #4A90E2;
+    font-weight: 600;
+}
+
+.style-preview {
+    display: flex;
+    gap: 4px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 4px;
+    transition: all 0.3s ease;
+}
+
+.style-preview img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.style-name {
+    font-size: 12px;
+    color: #7F8C8D;
+    text-align: center;
+}
+
+/* 滑动条 */
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.config-slider {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: #E9ECEF;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.config-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4A90E2;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(74, 144, 226, 0.3);
+}
+
+.config-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4A90E2;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 6px rgba(74, 144, 226, 0.3);
+}
+
+.slider-value {
+    font-size: 14px;
+    color: #2C3E50;
+    font-weight: 500;
+}
+
+/* 复选框组 */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #4A90E2;
+}
+
+.checkbox-label {
+    font-size: 14px;
+    color: #2C3E50;
+}
+
+/* 添加自定义目标按钮 */
+.add-custom-goal {
+    background: none;
+    border: 1px dashed #95A5A6;
+    color: #95A5A6;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+}
+
+.add-custom-goal:hover {
+    border-color: #4A90E2;
+    color: #4A90E2;
+}
+
+/* 开关 */
+.switch-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.config-switch {
+    position: relative;
+    width: 48px;
+    height: 24px;
+    -webkit-appearance: none;
+    background: #E9ECEF;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.config-switch:checked {
+    background: #4A90E2;
+}
+
+.switch-slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.config-switch:checked + .switch-slider {
+    transform: translateX(24px);
+}
+
+/* IP上传区域 */
+.ip-upload-section {
+    margin-top: 12px;
+    padding: 16px;
+    background: #F8F9FA;
+    border-radius: 8px;
+    border: 1px dashed #E9ECEF;
+}
+
+.upload-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+    background: #2E5BBA;
+}
+
+.upload-hint {
+    font-size: 12px;
+    color: #95A5A6;
+    margin-top: 8px;
+}
+
+/* 互动配置 */
+.interaction-config {
+    margin-top: 20px;
+    padding: 16px;
+    background: #F8F9FA;
+    border-radius: 8px;
+    border-left: 4px solid #4A90E2;
+}
+
+.interaction-config h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2C3E50;
+    margin-bottom: 16px;
+}
+
+.effect-preview {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.effect-preview img {
+    max-width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #E9ECEF;
+}
+
+/* 预览区域 */
+.preview-section {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 20px;
+}
+
+.preview-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2C3E50;
+    margin-bottom: 16px;
+}
+
+.mini-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.preview-cover {
+    text-align: center;
+}
+
+.preview-cover img {
+    width: 100%;
+    max-width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.preview-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.summary-label {
+    color: #7F8C8D;
+}
+
+.summary-value {
+    color: #2C3E50;
+    font-weight: 500;
+}
+
+/* 底部操作栏 */
+.bottom-actions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #E9ECEF;
+    padding: 16px 0;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+}
+
+.actions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 上传弹窗 */
+.upload-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.upload-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.upload-modal .modal-content {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow: hidden;
+}
+
+.upload-area {
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px dashed #E9ECEF;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    border-color: #4A90E2;
+    background: #F8F9FA;
+}
+
+.upload-icon {
+    color: #95A5A6;
+    margin-bottom: 16px;
+}
+
+.upload-area p {
+    color: #7F8C8D;
+    margin-bottom: 8px;
+}
+
+.upload-tip {
+    font-size: 12px;
+    color: #95A5A6;
+}
+
+.uploaded-files {
+    padding: 20px;
+}
+
+.file-preview {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.file-preview img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #E9ECEF;
+}
+
+.file-info h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2C3E50;
+    margin-bottom: 4px;
+}
+
+.file-info p {
+    font-size: 14px;
+    color: #7F8C8D;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .config-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .preview-section {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .config-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .style-options {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .actions-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .bottom-actions {
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .config-section {
+        padding: 16px;
+    }
+    
+    .radio-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .checkbox-group {
+        gap: 6px;
+    }
+    
+    .upload-modal .modal-content {
+        width: 95%;
+        margin: 20px;
+    }
+}

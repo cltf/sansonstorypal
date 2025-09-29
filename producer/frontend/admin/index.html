@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidBookFlow 管理后台</title>
+    <link rel="stylesheet" href="../user/styles/main.css">
+    <link rel="stylesheet" href="styles/admin.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header admin-header">
+        <div class="header-container">
+            <div class="brand-logo">
+                <div class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32">
+                        <rect x="4" y="6" width="20" height="16" rx="2" fill="#4A90E2" stroke="#2E5BBA" stroke-width="1"/>
+                        <rect x="6" y="8" width="16" height="12" fill="#FFFFFF"/>
+                        <circle cx="20" cy="12" r="4" fill="#FF6B35" stroke="#E55A2B" stroke-width="1"/>
+                        <circle cx="20" cy="12" r="2" fill="#FFFFFF"/>
+                        <path d="M18 10 L22 10 M18 14 L22 14 M16 12 L24 12" stroke="#FF6B35" stroke-width="1"/>
+                    </svg>
+                </div>
+                <span class="brand-name">KidBookFlow 管理后台</span>
+            </div>
+            <div class="header-actions">
+                <div class="admin-user-info">
+                    <span class="admin-role">系统管理员</span>
+                    <button class="action-btn user-btn">
+                        <img src="../user/assets/avatar-placeholder.png" alt="管理员头像" class="user-avatar">
+                        <span class="user-name">管理员</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content admin-main">
+        <!-- 数据概览区 -->
+        <section class="data-overview-section">
+            <h1 class="page-title">平台数据概览</h1>
+            <div class="overview-cards">
+                <div class="overview-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32">
+                            <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 8V16L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>平台总用户数</h3>
+                        <div class="card-value">2,847</div>
+                        <div class="card-change positive">+12.5% 较上月</div>
+                    </div>
+                </div>
+
+                <div class="overview-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32">
+                            <rect x="4" y="6" width="24" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="8" y="10" width="16" height="4" rx="1" fill="currentColor"/>
+                            <rect x="8" y="18" width="12" height="2" rx="1" fill="currentColor"/>
+                            <rect x="8" y="22" width="8" height="2" rx="1" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>本月生成绘本总数</h3>
+                        <div class="card-value">15,632</div>
+                        <div class="card-change positive">+28.3% 较上月</div>
+                    </div>
+                </div>
+
+                <div class="overview-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32">
+                            <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 8C12.7 8 10 10.7 10 14S12.7 20 16 20 22 17.3 22 14 19.3 8 16 8Z" fill="currentColor"/>
+                            <path d="M16 22C11.6 22 8 25.6 8 30H24C24 25.6 20.4 22 16 22Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>活跃用户数</h3>
+                        <div class="card-value">1,923</div>
+                        <div class="card-change positive">+8.7% 较上月</div>
+                    </div>
+                </div>
+
+                <div class="overview-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32">
+                            <rect x="4" y="4" width="24" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 12H20M12 16H20M12 20H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>待审核内容</h3>
+                        <div class="card-value">23</div>
+                        <div class="card-change neutral">需要处理</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能管理区 -->
+        <section class="management-section">
+            <div class="management-grid">
+                <!-- 会员管理区 -->
+                <div class="management-card">
+                    <div class="card-header">
+                        <h2>会员管理</h2>
+                        <button class="view-all-btn">查看全部</button>
+                    </div>
+                    <div class="card-content">
+                        <div class="member-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">基础版用户</span>
+                                <span class="stat-value">1,234</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">专业版用户</span>
+                                <span class="stat-value">1,613</span>
+                            </div>
+                        </div>
+                        <div class="renewal-reminders">
+                            <h4>续费提醒</h4>
+                            <div class="reminder-list">
+                                <div class="reminder-item">
+                                    <span class="user-name">张老师</span>
+                                    <span class="expire-date">3天后到期</span>
+                                    <button class="reminder-btn">发送提醒</button>
+                                </div>
+                                <div class="reminder-item">
+                                    <span class="user-name">李园长</span>
+                                    <span class="expire-date">7天后到期</span>
+                                    <button class="reminder-btn">发送提醒</button>
+                                </div>
+                                <div class="reminder-item">
+                                    <span class="user-name">王老师</span>
+                                    <span class="expire-date">15天后到期</span>
+                                    <button class="reminder-btn">发送提醒</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 内容审核区 -->
+                <div class="management-card">
+                    <div class="card-header">
+                        <h2>内容审核</h2>
+                        <button class="view-all-btn">查看全部</button>
+                    </div>
+                    <div class="card-content">
+                        <div class="audit-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">待审核素材</span>
+                                <span class="stat-value">15</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">违规举报</span>
+                                <span class="stat-value">8</span>
+                            </div>
+                        </div>
+                        <div class="audit-list">
+                            <div class="audit-item">
+                                <div class="item-info">
+                                    <span class="item-type">自定义IP素材</span>
+                                    <span class="item-user">用户：张老师</span>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="action-btn approve">通过</button>
+                                    <button class="action-btn reject">拒绝</button>
+                                </div>
+                            </div>
+                            <div class="audit-item">
+                                <div class="item-info">
+                                    <span class="item-type">违规内容举报</span>
+                                    <span class="item-user">举报人：李园长</span>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="action-btn review">查看</button>
+                                    <button class="action-btn handle">处理</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 系统配置区 -->
+                <div class="management-card">
+                    <div class="card-header">
+                        <h2>系统配置</h2>
+                        <button class="view-all-btn">系统设置</button>
+                    </div>
+                    <div class="card-content">
+                        <div class="system-status">
+                            <div class="status-item">
+                                <span class="status-label">模板库状态</span>
+                                <span class="status-value online">正常</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">AI模型训练</span>
+                                <span class="status-value training">训练中</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">服务器负载</span>
+                                <span class="status-value normal">正常</span>
+                            </div>
+                        </div>
+                        <div class="system-actions">
+                            <button class="system-btn" onclick="updateTemplateLibrary()">更新模板库</button>
+                            <button class="system-btn" onclick="checkSystemHealth()">系统健康检查</button>
+                            <button class="system-btn" onclick="viewServerLogs()">查看服务器日志</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 数据图表区 -->
+        <section class="charts-section">
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>用户增长趋势</h3>
+                        <div class="chart-controls">
+                            <select class="time-range">
+                                <option value="7">最近7天</option>
+                                <option value="30" selected>最近30天</option>
+                                <option value="90">最近90天</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="chart-content">
+                        <canvas id="userGrowthChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>绘本生成量统计</h3>
+                        <div class="chart-controls">
+                            <select class="time-range">
+                                <option value="7">最近7天</option>
+                                <option value="30" selected>最近30天</option>
+                                <option value="90">最近90天</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="chart-content">
+                        <canvas id="bookGenerationChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 快速操作区 -->
+        <section class="quick-actions-section">
+            <h2>快速操作</h2>
+            <div class="quick-actions">
+                <button class="quick-action-btn" onclick="openTemplateManagement()">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <path d="M9 9H15V15H9V9Z" fill="currentColor"/>
+                    </svg>
+                    模板库管理
+                </button>
+                <button class="quick-action-btn" onclick="openUserManagement()">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <path d="M19.4 15C19.3 15.3 19.2 15.6 19.1 15.9C18.9 16.4 18.6 16.8 18.3 17.2C17.9 17.7 17.4 18.1 16.8 18.4C16.2 18.7 15.6 18.9 15 19C14.4 19.1 13.8 19.1 13.2 19C12.6 18.9 12 18.7 11.4 18.4C10.8 18.1 10.3 17.7 9.9 17.2C9.6 16.8 9.3 16.4 9.1 15.9C9 15.6 8.9 15.3 8.8 15" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    用户管理
+                </button>
+                <button class="quick-action-btn" onclick="openContentAudit()">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    内容审核
+                </button>
+                <button class="quick-action-btn" onclick="openSystemLogs()">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 2V6M8 2V6M3 10H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    系统日志
+                </button>
+                <button class="quick-action-btn" onclick="openDataExport()">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M21 15V19C21 19.5 20.8 20 20.4 20.4C20 20.8 19.5 21 19 21H5C4.5 21 4 20.8 3.6 20.4C3.2 20 3 19.5 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    数据导出
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../user/scripts/main.js"></script>
+    <script src="scripts/admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

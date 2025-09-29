@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自定义需求配置 - KidBookFlow</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/custom-config.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="header-container">
+            <div class="brand-logo">
+                <div class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32">
+                        <rect x="4" y="6" width="20" height="16" rx="2" fill="#4A90E2" stroke="#2E5BBA" stroke-width="1"/>
+                        <rect x="6" y="8" width="16" height="12" fill="#FFFFFF"/>
+                        <circle cx="20" cy="12" r="4" fill="#FF6B35" stroke="#E55A2B" stroke-width="1"/>
+                        <circle cx="20" cy="12" r="2" fill="#FFFFFF"/>
+                        <path d="M18 10 L22 10 M18 14 L22 14 M16 12 L24 12" stroke="#FF6B35" stroke-width="1"/>
+                    </svg>
+                </div>
+                <span class="brand-name">KidBookFlow</span>
+            </div>
+            <div class="header-actions">
+                <a href="template-library.html" class="back-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    返回模板库
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- 页面标题 -->
+        <div class="page-header">
+            <h1>自定义需求配置</h1>
+            <p>根据您的具体需求，个性化配置绘本生产规则</p>
+        </div>
+
+        <div class="config-container">
+            <!-- 左侧配置区域 -->
+            <div class="config-left">
+                <!-- 基础信息配置区 -->
+                <section class="config-section">
+                    <h2 class="section-title">基础信息配置</h2>
+                    <div class="config-grid">
+                        <div class="config-group">
+                            <label for="taskName">任务名称</label>
+                            <input type="text" id="taskName" class="config-input" placeholder="如：幼儿园安全习惯绘本 - 5 本">
+                        </div>
+
+                        <div class="config-group">
+                            <label for="ageLevel">分龄分级</label>
+                            <select id="ageLevel" class="config-select">
+                                <option value="">选择分龄分级</option>
+                                <option value="pre-a1-3-6">Pre-A1 (3-6岁)</option>
+                                <option value="a1-7-9">A1 (7-9岁)</option>
+                                <option value="a2-10-12">A2 (10-12岁)</option>
+                                <option value="custom">自定义</option>
+                            </select>
+                        </div>
+
+                        <div class="config-group">
+                            <label for="productionCount">生产数量</label>
+                            <input type="number" id="productionCount" class="config-input" min="1" max="50" value="5">
+                            <span class="input-hint">范围：1-50本</span>
+                        </div>
+
+                        <div class="config-group">
+                            <label>主题类型</label>
+                            <div class="radio-group">
+                                <label class="radio-item">
+                                    <input type="radio" name="themeType" value="cognitive" checked>
+                                    <span class="radio-label">认知类</span>
+                                </label>
+                                <label class="radio-item">
+                                    <input type="radio" name="themeType" value="habit">
+                                    <span class="radio-label">习惯类</span>
+                                </label>
+                                <label class="radio-item">
+                                    <input type="radio" name="themeType" value="story">
+                                    <span class="radio-label">故事类</span>
+                                </label>
+                                <label class="radio-item">
+                                    <input type="radio" name="themeType" value="other">
+                                    <span class="radio-label">其他</span>
+                                </label>
+                            </div>
+                            <div class="custom-theme-input" id="customThemeInput" style="display: none;">
+                                <input type="text" placeholder="请输入自定义主题" class="config-input">
+                            </div>
+                        </div>
+
+                        <div class="config-group">
+                            <label>画风选择</label>
+                            <div class="style-options">
+                                <label class="style-option">
+                                    <input type="radio" name="artStyle" value="soft" checked>
+                                    <div class="style-preview">
+                                        <img src="assets/style-soft-1.jpg" alt="柔和手绘风" onerror="this.src='assets/placeholder-style.jpg'">
+                                        <img src="assets/style-soft-2.jpg" alt="柔和手绘风" onerror="this.src='assets/placeholder-style.jpg'">
+                                        <img src="assets/style-soft-3.jpg" alt="柔和手绘风" onerror="this.src='assets/placeholder-style.jpg'">
+                                    </div>
+                                    <span class="style-name">柔和手绘风</span>
+                                </label>
+                                <label class="style-option">
+                                    <input type="radio" name="artStyle" value="simple">
+                                    <div class="style-preview">
+                                        <img src="assets/style-simple-1.jpg" alt="简约卡通风" onerror="this.src='assets/placeholder-style.jpg'">
+                                        <img src="assets/style-simple-2.jpg" alt="简约卡通风" onerror="this.src='assets/placeholder-style.jpg'">
+                                        <img src="assets/style-simple-3.jpg" alt="简约卡通风" onerror="this.src='assets/placeholder-style.jpg'">
+                                    </div>
+                                    <span class="style-name">简约卡通风</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 内容规则配置区 -->
+                <section class="config-section">
+                    <h2 class="section-title">内容规则配置</h2>
+                    <div class="config-grid">
+                        <div class="config-group">
+                            <label for="pageCount">页数设置</label>
+                            <div class="slider-container">
+                                <input type="range" id="pageCount" class="config-slider" min="8" max="20" value="10">
+                                <div class="slider-value">单本页数：<span id="pageCountValue">10</span> 页</div>
+                            </div>
+                        </div>
+
+                        <div class="config-group">
+                            <label>句型要求</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="sentenceType" value="repeat">
+                                    <span class="checkbox-label">重复句型</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="sentenceType" value="rhyme">
+                                    <span class="checkbox-label">押韵句式</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="sentenceType" value="short">
+                                    <span class="checkbox-label">短句为主</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="sentenceType" value="compound">
+                                    <span class="checkbox-label">复合句占比≤30%</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="config-group">
+                            <label>教育目标</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="educationGoal" value="vocabulary">
+                                    <span class="checkbox-label">词汇认知</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="educationGoal" value="habit">
+                                    <span class="checkbox-label">习惯培养</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="educationGoal" value="social">
+                                    <span class="checkbox-label">社交礼仪</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="educationGoal" value="nature">
+                                    <span class="checkbox-label">自然常识</span>
+                                </label>
+                            </div>
+                            <button class="add-custom-goal" id="addCustomGoal">+ 添加自定义目标</button>
+                        </div>
+
+                        <div class="config-group">
+                            <label class="switch-label">
+                                <input type="checkbox" id="ipIntegration" class="config-switch">
+                                <span class="switch-slider"></span>
+                                IP植入
+                            </label>
+                            <div class="ip-upload-section" id="ipUploadSection" style="display: none;">
+                                <button class="upload-btn" id="uploadIpBtn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20">
+                                        <path d="M14 2H6C4.9 2 4 2.9 4 4V16C4 17.1 4.9 18 6 18H14C15.1 18 16 17.1 16 16V4C16 2.9 15.1 2 14 2Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M8 6H12M8 10H12M8 14H10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    上传IP素材
+                                </button>
+                                <p class="upload-hint">建议上传透明背景的IP形象图</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 右侧互动规则配置区 -->
+            <div class="config-right">
+                <section class="config-section">
+                    <h2 class="section-title">互动规则配置</h2>
+                    
+                    <div class="config-group">
+                        <label>互动类型</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interactionType" value="ar">
+                                <span class="checkbox-label">AR角色互动</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interactionType" value="click">
+                                <span class="checkbox-label">点击查词</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interactionType" value="task">
+                                <span class="checkbox-label">任务引导</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- AR互动配置 -->
+                    <div class="interaction-config" id="arConfig" style="display: none;">
+                        <h3>AR互动配置</h3>
+                        <div class="config-group">
+                            <label for="arPointCount">互动点数量</label>
+                            <div class="slider-container">
+                                <input type="range" id="arPointCount" class="config-slider" min="1" max="5" value="3">
+                                <div class="slider-value"><span id="arPointCountValue">3</span> 处 / 本</div>
+                            </div>
+                        </div>
+                        <div class="config-group">
+                            <label for="arEffect">互动效果</label>
+                            <select id="arEffect" class="config-select">
+                                <option value="animation">角色动画 + 语音</option>
+                                <option value="click">物品点击触发剧情</option>
+                                <option value="gesture">手势控制角色</option>
+                            </select>
+                        </div>
+                        <div class="effect-preview" id="effectPreview">
+                            <img src="assets/ar-preview-animation.gif" alt="AR效果预览" onerror="this.src='assets/placeholder-ar.jpg'">
+                        </div>
+                    </div>
+
+                    <!-- 任务引导配置 -->
+                    <div class="interaction-config" id="taskConfig" style="display: none;">
+                        <h3>任务引导配置</h3>
+                        <div class="config-group">
+                            <label for="taskType">任务类型</label>
+                            <select id="taskType" class="config-select">
+                                <option value="find">找物品</option>
+                                <option value="read">跟读句子</option>
+                                <option value="choose">选择答案</option>
+                            </select>
+                        </div>
+                        <div class="config-group">
+                            <label for="taskCount">任务数量</label>
+                            <input type="number" id="taskCount" class="config-input" min="1" max="3" value="1">
+                            <span class="input-hint">1-3个 / 本</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 实时预览窗 -->
+                <section class="preview-section">
+                    <h3>配置预览</h3>
+                    <div class="mini-preview">
+                        <div class="preview-cover">
+                            <img src="assets/preview-cover.jpg" alt="预览封面" onerror="this.src='assets/placeholder-book.jpg'">
+                        </div>
+                        <div class="preview-summary">
+                            <div class="summary-item">
+                                <span class="summary-label">页数：</span>
+                                <span class="summary-value" id="previewPageCount">10页</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">风格：</span>
+                                <span class="summary-value" id="previewStyle">柔和手绘风</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">互动：</span>
+                                <span class="summary-value" id="previewInteraction">AR角色互动</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 底部操作栏 -->
+        <div class="bottom-actions">
+            <div class="actions-container">
+                <button class="btn btn-secondary" id="saveTemplateBtn">保存为模板</button>
+                <button class="btn btn-primary" id="nextStepBtn">下一步：生成配置预览</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- IP素材上传弹窗 -->
+    <div class="upload-modal" id="uploadModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>上传IP素材</h3>
+                <button class="close-btn" id="closeUploadModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48">
+                            <path d="M24 4L12 16H18V32H30V16H36L24 4Z" fill="currentColor"/>
+                            <path d="M8 36V40H40V36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <p>拖拽文件到此处或点击选择文件</p>
+                    <p class="upload-tip">支持 PNG、JPG 格式，建议透明背景</p>
+                    <input type="file" id="fileInput" accept="image/png,image/jpeg" style="display: none;">
+                </div>
+                <div class="uploaded-files" id="uploadedFiles" style="display: none;">
+                    <div class="file-preview">
+                        <img id="previewImage" src="" alt="IP形象预览">
+                        <div class="file-info">
+                            <h4>IP形象预览</h4>
+                            <p>AI将自动将IP融入绘本场景</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelUpload">取消</button>
+                <button class="btn btn-primary" id="confirmUpload">确认上传</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/custom-config.js"></script>
+</body>
+</html>

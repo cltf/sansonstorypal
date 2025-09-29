@@ -1,0 +1,82 @@
+version: '3.8'
+
+services:
+  # 后端API服务
+  api:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - DATABASE_URL=postgresql://kidbookflow:password@db:5432/kidbookflow
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=your-production-secret-key
+      - JWT_SECRET_KEY=your-jwt-secret-key
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./uploads:/app/uploads
+    restart: unless-stopped
+
+  # 前端Web服务
+  web:
+    build: ./frontend
+    ports:
+      - "80:80"
+    volumes:
+      - ./frontend/user:/usr/share/nginx/html/user
+      - ./frontend/admin:/usr/share/nginx/html/admin
+    restart: unless-stopped
+
+  # PostgreSQL数据库
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=kidbookflow
+      - POSTGRES_USER=kidbookflow
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  # Redis缓存
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  # Celery Worker (异步任务处理)
+  worker:
+    build: ./backend
+    command: celery -A app.celery worker --loglevel=info
+    environment:
+      - FLASK_ENV=production
+      - DATABASE_URL=postgresql://kidbookflow:password@db:5432/kidbookflow
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./uploads:/app/uploads
+    restart: unless-stopped
+
+  # Celery Beat (定时任务)
+  beat:
+    build: ./backend
+    command: celery -A app.celery beat --loglevel=info
+    environment:
+      - FLASK_ENV=production
+      - DATABASE_URL=postgresql://kidbookflow:password@db:5432/kidbookflow
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:

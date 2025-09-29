@@ -1,0 +1,488 @@
+/* 模板库页面专用样式 */
+
+/* 页面标题 */
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2C3E50;
+    margin-bottom: 12px;
+}
+
+.page-header p {
+    font-size: 16px;
+    color: #7F8C8D;
+}
+
+/* 筛选栏 */
+.filter-section {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.filter-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: end;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2C3E50;
+}
+
+.filter-select {
+    padding: 12px 16px;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #2C3E50;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: #4A90E2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.search-group {
+    grid-column: span 2;
+}
+
+.search-input-wrapper {
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 16px 12px 48px;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #2C3E50;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #4A90E2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #95A5A6;
+    pointer-events: none;
+}
+
+/* 模板网格 */
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+/* 模板卡片 */
+.template-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.template-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.template-cover {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+
+.template-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.template-card:hover .template-cover img {
+    transform: scale(1.05);
+}
+
+.template-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(74, 144, 226, 0.9);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+}
+
+.template-favorite {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.template-favorite:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+}
+
+.template-favorite.favorited {
+    color: #FFD700;
+}
+
+.template-favorite svg {
+    width: 16px;
+    height: 16px;
+}
+
+.template-info {
+    padding: 20px;
+}
+
+.template-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2C3E50;
+    margin-bottom: 8px;
+}
+
+.template-description {
+    font-size: 14px;
+    color: #7F8C8D;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.template-structure {
+    background: #F8F9FA;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+.structure-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+.structure-item:last-child {
+    margin-bottom: 0;
+}
+
+.structure-label {
+    color: #7F8C8D;
+}
+
+.structure-value {
+    color: #2C3E50;
+    font-weight: 500;
+}
+
+.template-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.template-action-btn {
+    flex: 1;
+    padding: 10px 16px;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    background: white;
+    color: #7F8C8D;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.template-action-btn:hover {
+    border-color: #4A90E2;
+    color: #4A90E2;
+}
+
+.template-action-btn.primary {
+    background: #4A90E2;
+    color: white;
+    border-color: #4A90E2;
+}
+
+.template-action-btn.primary:hover {
+    background: #2E5BBA;
+    border-color: #2E5BBA;
+}
+
+/* 自定义模板按钮 */
+.custom-template-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.custom-template-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #FF6B35, #E55A2B);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+}
+
+.custom-template-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
+}
+
+/* 模板预览弹窗 */
+.template-preview-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.template-preview-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.template-preview-modal .modal-content {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 90%;
+    max-height: 80vh;
+    overflow: hidden;
+}
+
+.preview-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    padding: 24px;
+}
+
+.preview-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.template-pages {
+    position: relative;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #F8F9FA;
+}
+
+.page-preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.page-preview.active {
+    opacity: 1;
+}
+
+.page-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.page-info {
+    padding: 16px;
+    background: white;
+}
+
+.page-number {
+    font-size: 12px;
+    color: #7F8C8D;
+    font-weight: 500;
+}
+
+.page-text {
+    font-size: 16px;
+    color: #2C3E50;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn {
+    padding: 8px 16px;
+    border: 1px solid #E9ECEF;
+    border-radius: 6px;
+    background: white;
+    color: #7F8C8D;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    border-color: #4A90E2;
+    color: #4A90E2;
+}
+
+.page-indicator {
+    font-size: 14px;
+    color: #2C3E50;
+    font-weight: 500;
+}
+
+.preview-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.template-details h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2C3E50;
+    margin-bottom: 16px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #F1F3F4;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-size: 14px;
+    color: #7F8C8D;
+}
+
+.detail-value {
+    font-size: 14px;
+    color: #2C3E50;
+    font-weight: 500;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .filter-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .search-group {
+        grid-column: span 1;
+    }
+    
+    .template-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .preview-content {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .template-preview-modal .modal-content {
+        width: 95%;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 24px;
+    }
+    
+    .template-actions {
+        flex-direction: column;
+    }
+    
+    .template-action-btn {
+        flex: none;
+    }
+}
